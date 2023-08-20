@@ -1,0 +1,3463 @@
+<!DOCTYPE html>
+<html dir='ltr' lang='en'>
+<head>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<title>Multiplication Table </title>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<!-- Chrome, Firefox OS and Opera --><meta content='#3b3b3b' name='theme-color'/>
+<!-- Windows Phone -->
+<meta content='#3b3b3b' name='msapplication-navbutton-color'/>
+<meta content='blogger' name='generator'/>
+<link href='https://my-projects-in-c.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Our Projects in C Language  - Atom" href="https://my-projects-in-c.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Our Projects in C Language  - RSS" href="https://my-projects-in-c.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Our Projects in C Language  - Atom" href="https://www.blogger.com/feeds/5393488923647438845/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Our Projects in C Language  - Atom" href="https://my-projects-in-c.blogspot.com/feeds/7765236652540864769/comments/default" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<meta content='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html' property='og:url'/>
+<meta content='Multiplication Table ' property='og:title'/>
+<meta content='Multiplication Table by Mohit Purohit                                          Copy Code               ...' property='og:description'/>
+<style type='text/css'>@font-face{font-family:'Allerta';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/allerta/v18/TwMO-IAHRlkbx940YnYXSCiN9uc.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Josefin Sans';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/josefinsans/v26/Qw3aZQNVED7rKGKxtqIqX5EUAnx4Vn8siqM7.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Josefin Sans';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/josefinsans/v26/Qw3aZQNVED7rKGKxtqIqX5EUA3x4Vn8siqM7.woff2)format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Josefin Sans';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/josefinsans/v26/Qw3aZQNVED7rKGKxtqIqX5EUDXx4Vn8sig.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Josefin Sans';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/josefinsans/v26/Qw3aZQNVED7rKGKxtqIqX5EUAnx4Vn8siqM7.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Josefin Sans';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/josefinsans/v26/Qw3aZQNVED7rKGKxtqIqX5EUA3x4Vn8siqM7.woff2)format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Josefin Sans';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/josefinsans/v26/Qw3aZQNVED7rKGKxtqIqX5EUDXx4Vn8sig.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Philosopher';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/philosopher/v19/vEFI2_5QCwIS4_Dhez5jcWjValgW8te1Xb7GlMo.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Philosopher';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/philosopher/v19/vEFI2_5QCwIS4_Dhez5jcWjValgf8te1Xb7GlMo.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Philosopher';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/philosopher/v19/vEFI2_5QCwIS4_Dhez5jcWjValgU8te1Xb7GlMo.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Philosopher';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/philosopher/v19/vEFI2_5QCwIS4_Dhez5jcWjValgb8te1Xb7G.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),local('sans-serif'),url(//fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),local('sans-serif'),url(//fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),local('sans-serif'),url(//fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),local('sans-serif'),url(//fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),local('sans-serif'),url(//fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),local('sans-serif'),url(//fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2)format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),local('sans-serif'),url(//fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjvWyNPYZvg7UI.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjtGyNPYZvg7UI.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjvGyNPYZvg7UI.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjs2yNPYZvg7UI.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjvmyNPYZvg7UI.woff2)format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Ubuntu';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjsGyNPYZvgw.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style>
+<style id='page-skin-1' type='text/css'><!--
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+/*!************************************************
+* Blogger Template Style
+* Name: Contempo
+**************************************************/
+body{
+overflow-wrap:break-word;
+word-break:break-word;
+word-wrap:break-word
+}
+.hidden{
+display:none
+}
+.invisible{
+visibility:hidden
+}
+.container::after,.float-container::after{
+clear:both;
+content:"";
+display:table
+}
+.clearboth{
+clear:both
+}
+#comments .comment .comment-actions,.subscribe-popup .FollowByEmail .follow-by-email-submit,.widget.Profile .profile-link,.widget.Profile .profile-link.visit-profile{
+background:0 0;
+border:0;
+box-shadow:none;
+color:#0B8043;
+cursor:pointer;
+font-size:14px;
+font-weight:700;
+outline:0;
+text-decoration:none;
+text-transform:uppercase;
+width:auto
+}
+.dim-overlay{
+background-color:rgba(0,0,0,.54);
+height:100vh;
+left:0;
+position:fixed;
+top:0;
+width:100%
+}
+#sharing-dim-overlay{
+background-color:transparent
+}
+input::-ms-clear{
+display:none
+}
+.blogger-logo,.svg-icon-24.blogger-logo{
+fill:#ff9800;
+opacity:1
+}
+.loading-spinner-large{
+-webkit-animation:mspin-rotate 1.568s infinite linear;
+animation:mspin-rotate 1.568s infinite linear;
+height:48px;
+overflow:hidden;
+position:absolute;
+width:48px;
+z-index:200
+}
+.loading-spinner-large>div{
+-webkit-animation:mspin-revrot 5332ms infinite steps(4);
+animation:mspin-revrot 5332ms infinite steps(4)
+}
+.loading-spinner-large>div>div{
+-webkit-animation:mspin-singlecolor-large-film 1333ms infinite steps(81);
+animation:mspin-singlecolor-large-film 1333ms infinite steps(81);
+background-size:100%;
+height:48px;
+width:3888px
+}
+.mspin-black-large>div>div,.mspin-grey_54-large>div>div{
+background-image:url(https://www.blogblog.com/indie/mspin_black_large.svg)}
+.mspin-white-large>div>div{
+background-image:url(https://www.blogblog.com/indie/mspin_white_large.svg)}
+.mspin-grey_54-large{
+opacity:.54
+}
+@-webkit-keyframes mspin-singlecolor-large-film{
+from{
+-webkit-transform:translateX(0);
+transform:translateX(0)
+}
+to{
+-webkit-transform:translateX(-3888px);
+transform:translateX(-3888px)
+}
+}
+@keyframes mspin-singlecolor-large-film{
+from{
+-webkit-transform:translateX(0);
+transform:translateX(0)
+}
+to{
+-webkit-transform:translateX(-3888px);
+transform:translateX(-3888px)
+}
+}
+@-webkit-keyframes mspin-rotate{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(360deg);
+transform:rotate(360deg)
+}
+}
+@keyframes mspin-rotate{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(360deg);
+transform:rotate(360deg)
+}
+}
+@-webkit-keyframes mspin-revrot{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(-360deg);
+transform:rotate(-360deg)
+}
+}
+@keyframes mspin-revrot{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(-360deg);
+transform:rotate(-360deg)
+}
+}
+.skip-navigation{
+background-color:#fff;
+box-sizing:border-box;
+color:#000;
+display:block;
+height:0;
+left:0;
+line-height:50px;
+overflow:hidden;
+padding-top:0;
+position:fixed;
+text-align:center;
+top:0;
+-webkit-transition:box-shadow .3s,height .3s,padding-top .3s;
+transition:box-shadow .3s,height .3s,padding-top .3s;
+width:100%;
+z-index:900
+}
+.skip-navigation:focus{
+box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+height:50px
+}
+#main{
+outline:0
+}
+.main-heading{
+position:absolute;
+clip:rect(1px,1px,1px,1px);
+padding:0;
+border:0;
+height:1px;
+width:1px;
+overflow:hidden
+}
+.Attribution{
+margin-top:1em;
+text-align:center
+}
+.Attribution .blogger img,.Attribution .blogger svg{
+vertical-align:bottom
+}
+.Attribution .blogger img{
+margin-right:.5em
+}
+.Attribution div{
+line-height:24px;
+margin-top:.5em
+}
+.Attribution .copyright,.Attribution .image-attribution{
+font-size:.7em;
+margin-top:1.5em
+}
+.BLOG_mobile_video_class{
+display:none
+}
+.bg-photo{
+background-attachment:scroll!important
+}
+body .CSS_LIGHTBOX{
+z-index:900
+}
+.extendable .show-less,.extendable .show-more{
+border-color:#0B8043;
+color:#0B8043;
+margin-top:8px
+}
+.extendable .show-less.hidden,.extendable .show-more.hidden{
+display:none
+}
+.inline-ad{
+display:none;
+max-width:100%;
+overflow:hidden
+}
+.adsbygoogle{
+display:block
+}
+#cookieChoiceInfo{
+bottom:0;
+top:auto
+}
+iframe.b-hbp-video{
+border:0
+}
+.post-body img{
+max-width:100%
+}
+.post-body iframe{
+max-width:100%
+}
+.post-body a[imageanchor="1"]{
+display:inline-block
+}
+.byline{
+margin-right:1em
+}
+.byline:last-child{
+margin-right:0
+}
+.link-copied-dialog{
+max-width:520px;
+outline:0
+}
+.link-copied-dialog .modal-dialog-buttons{
+margin-top:8px
+}
+.link-copied-dialog .goog-buttonset-default{
+background:0 0;
+border:0
+}
+.link-copied-dialog .goog-buttonset-default:focus{
+outline:0
+}
+.paging-control-container{
+margin-bottom:16px
+}
+.paging-control-container .paging-control{
+display:inline-block
+}
+.paging-control-container .comment-range-text::after,.paging-control-container .paging-control{
+color:#0B8043
+}
+.paging-control-container .comment-range-text,.paging-control-container .paging-control{
+margin-right:8px
+}
+.paging-control-container .comment-range-text::after,.paging-control-container .paging-control::after{
+content:"\b7";
+cursor:default;
+padding-left:8px;
+pointer-events:none
+}
+.paging-control-container .comment-range-text:last-child::after,.paging-control-container .paging-control:last-child::after{
+content:none
+}
+.byline.reactions iframe{
+height:20px
+}
+.b-notification{
+color:#000;
+background-color:#fff;
+border-bottom:solid 1px #000;
+box-sizing:border-box;
+padding:16px 32px;
+text-align:center
+}
+.b-notification.visible{
+-webkit-transition:margin-top .3s cubic-bezier(.4,0,.2,1);
+transition:margin-top .3s cubic-bezier(.4,0,.2,1)
+}
+.b-notification.invisible{
+position:absolute
+}
+.b-notification-close{
+position:absolute;
+right:8px;
+top:8px
+}
+.no-posts-message{
+line-height:40px;
+text-align:center
+}
+@media screen and (max-width:800px){
+body.item-view .post-body a[imageanchor="1"][style*="float: left;"],body.item-view .post-body a[imageanchor="1"][style*="float: right;"]{
+float:none!important;
+clear:none!important
+}
+body.item-view .post-body a[imageanchor="1"] img{
+display:block;
+height:auto;
+margin:0 auto
+}
+body.item-view .post-body>.separator:first-child>a[imageanchor="1"]:first-child{
+margin-top:20px
+}
+.post-body a[imageanchor]{
+display:block
+}
+body.item-view .post-body a[imageanchor="1"]{
+margin-left:0!important;
+margin-right:0!important
+}
+body.item-view .post-body a[imageanchor="1"]+a[imageanchor="1"]{
+margin-top:16px
+}
+}
+.item-control{
+display:none
+}
+#comments{
+border-top:1px dashed rgba(0,0,0,.54);
+margin-top:20px;
+padding:20px
+}
+#comments .comment-thread ol{
+margin:0;
+padding-left:0;
+padding-left:0
+}
+#comments .comment .comment-replybox-single,#comments .comment-thread .comment-replies{
+margin-left:60px
+}
+#comments .comment-thread .thread-count{
+display:none
+}
+#comments .comment{
+list-style-type:none;
+padding:0 0 30px;
+position:relative
+}
+#comments .comment .comment{
+padding-bottom:8px
+}
+.comment .avatar-image-container{
+position:absolute
+}
+.comment .avatar-image-container img{border-radius:50%
+}
+.avatar-image-container svg,.comment .avatar-image-container .avatar-icon{border-radius:50%;
+border:solid 1px #9E9E9E;
+box-sizing:border-box;
+fill:#9E9E9E;
+height:35px;
+margin:0;
+padding:7px;
+width:35px
+}
+.comment .comment-block{
+margin-top:10px;
+margin-left:60px;
+padding-bottom:0
+}
+#comments .comment-author-header-wrapper{
+margin-left:40px
+}
+#comments .comment .thread-expanded .comment-block{
+padding-bottom:20px
+}
+#comments .comment .comment-header .user,#comments .comment .comment-header .user a{
+color:#FFFFFF;
+font-style:normal;
+font-weight:700
+}
+#comments .comment .comment-actions{
+bottom:0;
+margin-bottom:15px;
+position:absolute
+}
+#comments .comment .comment-actions>*{
+margin-right:8px
+}
+#comments .comment .comment-header .datetime{
+bottom:0;
+color:rgba(255,255,255,.54);
+display:inline-block;
+font-size:13px;
+font-style:italic;
+margin-left:8px
+}
+#comments .comment .comment-footer .comment-timestamp a,#comments .comment .comment-header .datetime a{
+color:rgba(255,255,255,.54)
+}
+#comments .comment .comment-content,.comment .comment-body{
+margin-top:12px;
+word-break:break-word
+}
+.comment-body{
+margin-bottom:12px
+}
+#comments.embed[data-num-comments="0"]{
+border:0;
+margin-top:0;
+padding-top:0
+}
+#comments.embed[data-num-comments="0"] #comment-post-message,#comments.embed[data-num-comments="0"] div.comment-form>p,#comments.embed[data-num-comments="0"] p.comment-footer{
+display:none
+}
+#comment-editor-src{
+display:none
+}
+.comments .comments-content .loadmore.loaded{
+max-height:0;
+opacity:0;
+overflow:hidden
+}
+.extendable .remaining-items{
+height:0;
+overflow:hidden;
+-webkit-transition:height .3s cubic-bezier(.4,0,.2,1);
+transition:height .3s cubic-bezier(.4,0,.2,1)
+}
+.extendable .remaining-items.expanded{
+height:auto
+}
+.svg-icon-24,.svg-icon-24-button{
+cursor:pointer;
+height:24px;
+width:24px;
+min-width:24px
+}
+.touch-icon{
+margin:-12px;
+padding:12px
+}
+.touch-icon:active,.touch-icon:focus{background-color:rgba(153,153,153,.4);
+border-radius:50%
+}
+svg:not(:root).touch-icon{
+overflow:visible
+}
+html[dir=rtl] .rtl-reversible-icon{
+-webkit-transform:scaleX(-1);
+-ms-transform:scaleX(-1);
+transform:scaleX(-1)
+}
+.svg-icon-24-button,.touch-icon-button{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0
+}
+.touch-icon-button .touch-icon:active,.touch-icon-button .touch-icon:focus{
+background-color:transparent
+}
+.touch-icon-button:active .touch-icon,.touch-icon-button:focus .touch-icon{
+background-color:rgba(153,153,153,.4);
+border-radius:50%
+}
+.Profile .default-avatar-wrapper .avatar-icon{
+border-radius:50%;
+border:solid 1px #9E9E9E;
+box-sizing:border-box;
+fill:#9E9E9E;
+margin:0
+5}
+.Profile .individual .default-avatar-wrapper .avatar-icon{
+padding:25px
+}
+.Profile .individual .avatar-icon,.Profile .individual .profile-img{
+height:120px;
+width:120px
+}
+.Profile .team .default-avatar-wrapper .avatar-icon{
+padding:8px
+}
+.Profile .team .avatar-icon,.Profile .team .default-avatar-wrapper,.Profile .team .profile-img{
+height:40px;
+width:40px
+}
+.snippet-container{
+margin:0;
+position:relative;
+overflow:hidden
+}
+.snippet-fade{
+bottom:0;
+box-sizing:border-box;
+position:absolute;
+width:96px
+}
+.snippet-fade{
+right:0
+}
+.snippet-fade:after{
+content:"\2026"
+}
+.snippet-fade:after{
+float:right
+}
+.post-bottom{
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-flex-wrap:wrap;
+-ms-flex-wrap:wrap;
+flex-wrap:wrap
+}
+.post-footer{
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+-webkit-flex-wrap:wrap;
+-ms-flex-wrap:wrap;
+flex-wrap:wrap;
+-webkit-box-ordinal-group:2;
+-webkit-order:1;
+-ms-flex-order:1;
+order:1
+}
+.post-footer>*{
+-webkit-box-flex:0;
+-webkit-flex:0 1 auto;
+-ms-flex:0 1 auto;
+flex:0 1 auto
+}
+.post-footer .byline:last-child{
+margin-right:1em
+}
+.jump-link{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2
+}
+.centered-top-container.sticky{
+left:0;
+position:fixed;
+right:0;
+top:0;
+width:auto;
+z-index:50;
+-webkit-transition-property:opacity,-webkit-transform;
+transition-property:opacity,-webkit-transform;
+transition-property:transform,opacity;
+transition-property:transform,opacity,-webkit-transform;
+-webkit-transition-duration:.2s;
+transition-duration:.2s;
+-webkit-transition-timing-function:cubic-bezier(.4,0,.2,1);
+transition-timing-function:cubic-bezier(.4,0,.2,1)
+}
+.centered-top-placeholder{
+display:none
+}
+.collapsed-header .centered-top-placeholder{
+display:block
+}
+.centered-top-container .Header .replaced h1,.centered-top-placeholder .Header .replaced h1{
+display:none
+}
+.centered-top-container.sticky .Header .replaced h1{
+display:block
+}
+.centered-top-container.sticky .Header .header-widget{
+background:0 0
+}
+.centered-top-container.sticky .Header .header-image-wrapper{
+display:none
+}
+.centered-top-container img,.centered-top-placeholder img{
+max-width:100%
+}
+.collapsible{
+-webkit-transition:height .3s cubic-bezier(.4,0,.2,1);
+transition:height .3s cubic-bezier(.4,0,.2,1)
+}
+.collapsible,.collapsible>summary{
+display:block;
+overflow:hidden
+}
+.collapsible>:not(summary){
+display:none
+}
+.collapsible[open]>:not(summary){
+display:block
+}
+.collapsible:focus,.collapsible>summary:focus{
+outline:0
+}
+.collapsible>summary{
+cursor:pointer;
+display:block;
+padding:0
+}
+.collapsible:focus>summary,.collapsible>summary:focus{
+background-color:transparent
+}
+.collapsible>summary::-webkit-details-marker{
+display:none
+}
+.collapsible-title{
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex
+}
+.collapsible-title .title{
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+-webkit-box-ordinal-group:1;
+-webkit-order:0;
+-ms-flex-order:0;
+order:0;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap
+}
+.collapsible-title .chevron-down,.collapsible[open] .collapsible-title .chevron-up{
+display:block
+}
+.collapsible-title .chevron-up,.collapsible[open] .collapsible-title .chevron-down{
+display:none
+}
+.flat-button{
+cursor:pointer;
+display:inline-block;
+font-weight:700;
+text-transform:uppercase;
+border-radius:2px;
+padding:8px;
+margin:-8px
+}
+.flat-icon-button{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0;
+margin:-12px;
+padding:12px;
+cursor:pointer;
+box-sizing:content-box;
+display:inline-block;
+line-height:0
+}
+.flat-icon-button,.flat-icon-button .splash-wrapper{
+border-radius:50%
+}
+.flat-icon-button .splash.animate{
+-webkit-animation-duration:.3s;
+animation-duration:.3s
+}
+.overflowable-container{
+max-height:46px;
+overflow:hidden;
+position:relative
+}
+.overflow-button{
+cursor:pointer
+}
+#overflowable-dim-overlay{
+background:0 0
+}
+.overflow-popup{
+box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+background-color:#000000;
+left:0;
+max-width:calc(100% - 32px);
+position:absolute;
+top:0;
+visibility:hidden;
+z-index:101
+}
+.overflow-popup ul{
+list-style:none
+}
+.overflow-popup .tabs li,.overflow-popup li{
+display:block;
+height:auto
+}
+.overflow-popup .tabs li{
+padding-left:0;
+padding-right:0
+}
+.overflow-button.hidden,.overflow-popup .tabs li.hidden,.overflow-popup li.hidden{
+display:none
+}
+.pill-button{
+background:0 0;
+border:1px solid;
+border-radius:12px;
+cursor:pointer;
+display:inline-block;
+padding:4px 16px;
+text-transform:uppercase
+}
+.ripple{
+position:relative
+}
+.ripple>*{
+z-index:1
+}
+.splash-wrapper{
+bottom:0;
+left:0;
+overflow:hidden;
+pointer-events:none;
+position:absolute;
+right:0;
+top:0;
+z-index:0
+}
+.splash{
+background:#ccc;
+border-radius:100%;
+display:block;
+opacity:.6;
+position:absolute;
+-webkit-transform:scale(0);
+-ms-transform:scale(0);
+transform:scale(0)
+}
+.splash.animate{
+-webkit-animation:ripple-effect .4s linear;
+animation:ripple-effect .4s linear
+}
+@-webkit-keyframes ripple-effect{
+100%{
+opacity:0;
+-webkit-transform:scale(2.5);
+transform:scale(2.5)
+}
+}
+@keyframes ripple-effect{
+100%{
+opacity:0;
+-webkit-transform:scale(2.5);
+transform:scale(2.5)
+}
+}
+.search{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+line-height:24px;
+width:24px
+}
+.search.focused{
+width:100%
+}
+.search.focused .section{
+width:100%
+}
+.search form{
+z-index:101
+}
+.search h3{
+display:none
+}
+.search form{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-flex:1;
+-webkit-flex:1 0 0;
+-ms-flex:1 0 0px;
+flex:1 0 0;
+border-bottom:solid 1px transparent;
+padding-bottom:8px
+}
+.search form>*{
+display:none
+}
+.search.focused form>*{
+display:block
+}
+.search .search-input label{
+display:none
+}
+.centered-top-placeholder.cloned .search form{
+z-index:30
+}
+.search.focused form{
+border-color:#ffffff;
+position:relative;
+width:auto
+}
+.collapsed-header .centered-top-container .search.focused form{
+border-bottom-color:transparent
+}
+.search-expand{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto
+}
+.search-expand-text{
+display:none
+}
+.search-close{
+display:inline;
+vertical-align:middle
+}
+.search-input{
+-webkit-box-flex:1;
+-webkit-flex:1 0 1px;
+-ms-flex:1 0 1px;
+flex:1 0 1px
+}
+.search-input input{
+background:0 0;
+border:0;
+box-sizing:border-box;
+color:#ffffff;
+display:inline-block;
+outline:0;
+width:calc(100% - 48px)
+}
+.search-input input.no-cursor{
+color:transparent;
+text-shadow:0 0 0 #ffffff
+}
+.collapsed-header .centered-top-container .search-action,.collapsed-header .centered-top-container .search-input input{
+color:#FFFFFF
+}
+.collapsed-header .centered-top-container .search-input input.no-cursor{
+color:transparent;
+text-shadow:0 0 0 #FFFFFF
+}
+.collapsed-header .centered-top-container .search-input input.no-cursor:focus,.search-input input.no-cursor:focus{
+outline:0
+}
+.search-focused>*{
+visibility:hidden
+}
+.search-focused .search,.search-focused .search-icon{
+visibility:visible
+}
+.search.focused .search-action{
+display:block
+}
+.search.focused .search-action:disabled{
+opacity:.3
+}
+.widget.Sharing .sharing-button{
+display:none
+}
+.widget.Sharing .sharing-buttons li{
+padding:0
+}
+.widget.Sharing .sharing-buttons li span{
+display:none
+}
+.post-share-buttons{
+position:relative
+}
+.centered-bottom .share-buttons .svg-icon-24,.share-buttons .svg-icon-24{
+fill:#FFFFFF
+}
+.sharing-open.touch-icon-button:active .touch-icon,.sharing-open.touch-icon-button:focus .touch-icon{
+background-color:transparent
+}
+.share-buttons{
+background-color:#000000;
+border-radius:2px;
+box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+color:#FFFFFF;
+list-style:none;
+margin:0;
+padding:8px 0;
+position:absolute;
+top:-11px;
+min-width:200px;
+z-index:101
+}
+.share-buttons.hidden{
+display:none
+}
+.sharing-button{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0;
+cursor:pointer
+}
+.share-buttons li{
+margin:0;
+height:48px
+}
+.share-buttons li:last-child{
+margin-bottom:0
+}
+.share-buttons li .sharing-platform-button{
+box-sizing:border-box;
+cursor:pointer;
+display:block;
+height:100%;
+margin-bottom:0;
+padding:0 16px;
+position:relative;
+width:100%
+}
+.share-buttons li .sharing-platform-button:focus,.share-buttons li .sharing-platform-button:hover{
+background-color:rgba(128,128,128,.1);
+outline:0
+}
+.share-buttons li svg[class*=" sharing-"],.share-buttons li svg[class^=sharing-]{
+position:absolute;
+top:10px
+}
+.share-buttons li span.sharing-platform-button{
+position:relative;
+top:0
+}
+.share-buttons li .platform-sharing-text{
+display:block;
+font-size:16px;
+line-height:48px;
+white-space:nowrap
+}
+.share-buttons li .platform-sharing-text{
+margin-left:56px
+}
+.sidebar-container{
+background-color:#000000;
+max-width:344px;
+overflow-y:auto;
+-webkit-transition-property:-webkit-transform;
+transition-property:-webkit-transform;
+transition-property:transform;
+transition-property:transform,-webkit-transform;
+-webkit-transition-duration:.3s;
+transition-duration:.3s;
+-webkit-transition-timing-function:cubic-bezier(0,0,.2,1);
+transition-timing-function:cubic-bezier(0,0,.2,1);
+width:344px;
+z-index:101;
+-webkit-overflow-scrolling:touch
+}
+.sidebar-container .navigation{
+line-height:0;
+padding:16px
+}
+.sidebar-container .sidebar-back{
+cursor:pointer
+}
+.sidebar-container .widget{
+background:0 0;
+margin:0 16px;
+padding:16px 0
+}
+.sidebar-container .widget .title{
+color:#FFFFFF;
+margin:0
+}
+.sidebar-container .widget ul{
+list-style:none;
+margin:0;
+padding:0
+}
+.sidebar-container .widget ul ul{
+margin-left:1em
+}
+.sidebar-container .widget li{
+font-size:16px;
+line-height:normal
+}
+.sidebar-container .widget+.widget{
+border-top:1px dashed #9E9E9E
+}
+.BlogArchive li{
+margin:16px 0
+}
+.BlogArchive li:last-child{
+margin-bottom:0
+}
+.Label li a{
+display:inline-block
+}
+.BlogArchive .post-count,.Label .label-count{
+float:right;
+margin-left:.25em
+}
+.BlogArchive .post-count::before,.Label .label-count::before{
+content:"("
+}
+.BlogArchive .post-count::after,.Label .label-count::after{
+content:")"
+}
+.widget.Translate .skiptranslate>div{display:block!important
+}
+.widget.Profile .profile-link{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex
+}
+.widget.Profile .team-member .default-avatar-wrapper,.widget.Profile .team-member .profile-img{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+margin-right:1em
+}
+.widget.Profile .individual .profile-link{
+-webkit-box-orient:vertical;
+-webkit-box-direction:normal;
+-webkit-flex-direction:column;
+-ms-flex-direction:column;
+flex-direction:column
+}
+.widget.Profile .team .profile-link .profile-name{
+-webkit-align-self:center;
+-ms-flex-item-align:center;
+align-self:center;
+display:block;
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto
+}
+.dim-overlay{
+background-color:rgba(0,0,0,.54);
+z-index:100
+}
+body.sidebar-visible{
+overflow-y:hidden
+}
+@media screen and (max-width:2977px){.sidebar-container{
+bottom:0;
+position:fixed;
+top:0;
+left:0;
+right:auto
+}
+.sidebar-container.sidebar-invisible{-webkit-transition-timing-function:cubic-bezier(.4,0,.6,1);
+transition-timing-function:cubic-bezier(.4,0,.6,1);
+-webkit-transform:translateX(-344px);-ms-transform:translateX(-344px);
+transform:translateX(-344px)
+}
+}
+@media screen and (min-width:2978px){.sidebar-container{
+position:absolute;
+top:0;
+left:0;
+right:auto
+}
+.sidebar-container .navigation{
+display:none
+}
+}
+.dialog{
+box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+background:#000000;
+box-sizing:border-box;
+color:#757575;
+padding:30px;
+position:fixed;
+text-align:center;
+width:calc(100% - 24px);
+z-index:101
+}
+.dialog input[type=email],.dialog input[type=text]{
+background-color:transparent;
+border:0;
+border-bottom:solid 1px rgba(117,117,117,.12);
+color:#757575;
+display:block;
+font-family:Josefin Sans;
+font-size:16px;
+line-height:24px;
+margin:auto;
+padding-bottom:7px;
+outline:0;
+text-align:center;
+width:100%
+}
+.dialog input[type=email]::-webkit-input-placeholder,.dialog input[type=text]::-webkit-input-placeholder{
+color:#757575
+}
+.dialog input[type=email]::-moz-placeholder,.dialog input[type=text]::-moz-placeholder{
+color:#757575
+}
+.dialog input[type=email]:-ms-input-placeholder,.dialog input[type=text]:-ms-input-placeholder{
+color:#757575
+}
+.dialog input[type=email]::-ms-input-placeholder,.dialog input[type=text]::-ms-input-placeholder{
+color:#757575
+}
+.dialog input[type=email]::placeholder,.dialog input[type=text]::placeholder{
+color:#757575
+}
+.dialog input[type=email]:focus,.dialog input[type=text]:focus{
+border-bottom:solid 2px #0B8043;
+padding-bottom:6px
+}
+.dialog input.no-cursor{
+color:transparent;
+text-shadow:0 0 0 #757575
+}
+.dialog input.no-cursor:focus{
+outline:0
+}
+.dialog input.no-cursor:focus{
+outline:0
+}
+.dialog input[type=submit]{
+font-family:Josefin Sans
+}
+.dialog .goog-buttonset-default{
+color:#0B8043
+}
+.subscribe-popup{
+max-width:364px
+}
+.subscribe-popup h3{
+color:#FFFFFF;
+font-size:1.8em;
+margin-top:0
+}
+.subscribe-popup .FollowByEmail h3{
+display:none
+}
+.subscribe-popup .FollowByEmail .follow-by-email-submit{
+color:#0B8043;
+display:inline-block;
+margin:0 auto;
+margin-top:24px;
+width:auto;
+white-space:normal
+}
+.subscribe-popup .FollowByEmail .follow-by-email-submit:disabled{
+cursor:default;
+opacity:.3
+}
+@media (max-width:800px){
+.blog-name div.widget.Subscribe{
+margin-bottom:16px
+}
+body.item-view .blog-name div.widget.Subscribe{
+margin:8px auto 16px auto;
+width:100%
+}
+}
+.tabs{
+list-style:none
+}
+.tabs li{
+display:inline-block
+}
+.tabs li a{
+cursor:pointer;
+display:inline-block;
+font-weight:700;
+text-transform:uppercase;
+padding:12px 8px
+}
+.tabs .selected{
+border-bottom:4px solid #FFFFFF
+}
+.tabs .selected a{
+color:#FFFFFF
+}
+body#layout .bg-photo,body#layout .bg-photo-overlay{
+display:none
+}
+body#layout .page_body{
+padding:0;
+position:relative;
+top:0
+}
+body#layout .page{
+display:inline-block;
+left:inherit;
+position:relative;
+vertical-align:top;
+width:540px
+}
+body#layout .centered{
+max-width:954px
+}
+body#layout .navigation{
+display:none
+}
+body#layout .sidebar-container{
+display:inline-block;
+width:40%
+}
+body#layout .hamburger-menu,body#layout .search{
+display:none
+}
+.centered-top-container .svg-icon-24,body.collapsed-header .centered-top-placeholder .svg-icon-24{
+fill:#ffffff
+}
+.sidebar-container .svg-icon-24{
+fill:#9E9E9E
+}
+.centered-bottom .svg-icon-24,body.collapsed-header .centered-top-container .svg-icon-24{
+fill:#9E9E9E
+}
+.centered-bottom .share-buttons .svg-icon-24,.share-buttons .svg-icon-24{
+fill:#FFFFFF
+}
+body{
+background-color:#3b3b3b;
+color:#757575;
+font:normal normal 15px Josefin Sans;margin:0;
+min-height:100vh
+}
+img{
+max-width:100%
+}
+h3{
+color:#757575;
+font-size:16px
+}
+a{
+text-decoration:none;
+color:#0B8043
+}
+a:visited{
+color:#F57C00
+}
+a:hover{
+color:transparent
+}
+blockquote{
+color:#000000;
+font:normal bold 15px Josefin Sans;
+font-size:x-large;
+text-align:center
+}
+.pill-button{
+font-size:12px
+}
+.bg-photo-container{
+height:420px;
+overflow:hidden;
+position:absolute;
+width:100%;
+z-index:1
+}
+.bg-photo{
+background:#000000 url(https://themes.googleusercontent.com/image?id=1uK3asOUTXGHOxBp5SzQi9-XgNXEKZ36dz3ulQ9zIinkHa_wkts_jwC2cKfeghsEwd8xV) no-repeat fixed top center /* Credit: enot-poloskun (http://www.istockphoto.com/portfolio/enot-poloskun?platform=blogger) */;
+background-attachment:scroll;
+background-size:cover;
+-webkit-filter:blur(7px);
+filter:blur(7px);
+height:calc(100% + 2 * 7px);
+left:-7px;
+position:absolute;
+top:-7px;
+width:calc(100% + 2 * 7px)
+}
+.bg-photo-overlay{
+background:rgba(0,0,0,.26);
+background-size:cover;
+height:420px;
+position:absolute;
+width:100%;
+z-index:2
+}
+.hamburger-menu{
+float:left;
+margin-top:0
+}
+.sticky .hamburger-menu{
+float:none;
+position:absolute
+}
+.search{
+border-bottom:solid 1px rgba(255, 255, 255, 0);
+float:right;
+position:relative;
+-webkit-transition-property:width;
+transition-property:width;
+-webkit-transition-duration:.5s;
+transition-duration:.5s;
+-webkit-transition-timing-function:cubic-bezier(.4,0,.2,1);
+transition-timing-function:cubic-bezier(.4,0,.2,1);
+z-index:101
+}
+.search .dim-overlay{
+background-color:transparent
+}
+.search form{
+height:36px;
+-webkit-transition-property:border-color;
+transition-property:border-color;
+-webkit-transition-delay:.5s;
+transition-delay:.5s;
+-webkit-transition-duration:.2s;
+transition-duration:.2s;
+-webkit-transition-timing-function:cubic-bezier(.4,0,.2,1);
+transition-timing-function:cubic-bezier(.4,0,.2,1)
+}
+.search.focused{
+width:calc(100% - 48px)
+}
+.search.focused form{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-flex:1;
+-webkit-flex:1 0 1px;
+-ms-flex:1 0 1px;
+flex:1 0 1px;
+border-color:#ffffff;
+margin-left:-24px;
+padding-left:36px;
+position:relative;
+width:auto
+}
+.item-view .search,.sticky .search{
+right:0;
+float:none;
+margin-left:0;
+position:absolute
+}
+.item-view .search.focused,.sticky .search.focused{
+width:calc(100% - 50px)
+}
+.item-view .search.focused form,.sticky .search.focused form{
+border-bottom-color:#EEEEEE
+}
+.centered-top-placeholder.cloned .search form{
+z-index:30
+}
+.search_button{
+-webkit-box-flex:0;
+-webkit-flex:0 0 24px;
+-ms-flex:0 0 24px;
+flex:0 0 24px;
+-webkit-box-orient:vertical;
+-webkit-box-direction:normal;
+-webkit-flex-direction:column;
+-ms-flex-direction:column;
+flex-direction:column
+}
+.search_button svg{
+margin-top:0
+}
+.search-input{
+height:48px
+}
+.search-input input{
+display:block;
+color:#ffffff;
+font:16px Roboto, sans-serif;
+height:48px;
+line-height:48px;
+padding:0;
+width:100%
+}
+.search-input input::-webkit-input-placeholder{
+color:#ffffff;
+opacity:.3
+}
+.search-input input::-moz-placeholder{
+color:#ffffff;
+opacity:.3
+}
+.search-input input:-ms-input-placeholder{
+color:#ffffff;
+opacity:.3
+}
+.search-input input::-ms-input-placeholder{
+color:#ffffff;
+opacity:.3
+}
+.search-input input::placeholder{
+color:#ffffff;
+opacity:.3
+}
+.search-action{
+background:0 0;
+border:0;
+color:#ffffff;
+cursor:pointer;
+display:none;
+height:48px;
+margin-top:0
+}
+.sticky .search-action{
+color:#EEEEEE
+}
+.search.focused .search-action{
+display:block
+}
+.search.focused .search-action:disabled{
+opacity:.3
+}
+.page_body{
+position:relative;
+z-index:20
+}
+.page_body .widget{
+margin-bottom:16px
+}
+.page_body .centered{
+box-sizing:border-box;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-orient:vertical;
+-webkit-box-direction:normal;
+-webkit-flex-direction:column;
+-ms-flex-direction:column;
+flex-direction:column;
+margin:0 auto;
+max-width:2400px;
+min-height:100vh;
+padding:24px 0
+}
+.page_body .centered>*{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto
+}
+.page_body .centered>#footer{
+margin-top:auto
+}
+.blog-name{
+margin:24px 0 16px 0
+}
+.item-view .blog-name,.sticky .blog-name{
+box-sizing:border-box;
+margin-left:36px;
+min-height:48px;
+opacity:1;
+padding-top:12px
+}
+.blog-name .subscribe-section-container{
+margin-bottom:32px;
+text-align:center;
+-webkit-transition-property:opacity;
+transition-property:opacity;
+-webkit-transition-duration:.5s;
+transition-duration:.5s
+}
+.item-view .blog-name .subscribe-section-container,.sticky .blog-name .subscribe-section-container{
+margin:0 0 8px 0
+}
+.blog-name .PageList{
+margin-top:16px;
+padding-top:8px;
+text-align:center
+}
+.blog-name .PageList .overflowable-contents{
+width:100%
+}
+.blog-name .PageList h3.title{
+color:#ffffff;
+margin:8px auto;
+text-align:center;
+width:100%
+}
+.centered-top-container .blog-name{
+-webkit-transition-property:opacity;
+transition-property:opacity;
+-webkit-transition-duration:.5s;
+transition-duration:.5s
+}
+.item-view .return_link{
+margin-bottom:12px;
+margin-top:12px;
+position:absolute
+}
+.item-view .blog-name{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-flex-wrap:wrap;
+-ms-flex-wrap:wrap;
+flex-wrap:wrap;
+margin:0 48px 27px 48px
+}
+.item-view .subscribe-section-container{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto
+}
+.item-view #header,.item-view .Header{
+margin-bottom:5px;
+margin-right:15px
+}
+.item-view .sticky .Header{
+margin-bottom:0
+}
+.item-view .Header p{
+margin:10px 0 0 0;
+text-align:left
+}
+.item-view .post-share-buttons-bottom{
+margin-right:16px
+}
+.sticky{
+background:#000000;
+box-shadow:0 0 20px 0 rgba(0,0,0,.7);box-sizing:border-box;
+margin-left:0
+}
+.sticky #header{
+margin-bottom:8px;
+margin-right:8px
+}
+.sticky .centered-top{
+margin:4px auto;
+max-width:2368px;
+min-height:48px
+}
+.sticky .blog-name{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+margin:0 48px
+}
+.sticky .blog-name #header{
+-webkit-box-flex:0;
+-webkit-flex:0 1 auto;
+-ms-flex:0 1 auto;
+flex:0 1 auto;
+-webkit-box-ordinal-group:2;
+-webkit-order:1;
+-ms-flex-order:1;
+order:1;
+overflow:hidden
+}
+.sticky .blog-name .subscribe-section-container{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2
+}
+.sticky .Header h1{
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+margin-right:-10px;
+margin-bottom:-10px;
+padding-right:10px;
+padding-bottom:10px
+}
+.sticky .Header p{
+display:none
+}
+.sticky .PageList{
+display:none
+}
+.search-focused>*{
+visibility:visible
+}
+.search-focused .hamburger-menu{
+visibility:visible
+}
+.item-view .search-focused .blog-name,.sticky .search-focused .blog-name{
+opacity:0
+}
+.centered-bottom,.centered-top-container,.centered-top-placeholder{
+padding:0 16px
+}
+.centered-top{
+position:relative
+}
+.item-view .centered-top.search-focused .subscribe-section-container,.sticky .centered-top.search-focused .subscribe-section-container{
+opacity:0
+}
+.page_body.has-vertical-ads .centered .centered-bottom{
+display:inline-block;
+width:calc(100% - 176px)
+}
+.Header h1{
+color:#ffffff;
+font:normal bold 45px Allerta;
+line-height:normal;
+margin:0 0 13px 0;
+text-align:center;
+width:100%
+}
+.Header h1 a,.Header h1 a:hover,.Header h1 a:visited{
+color:#ffffff
+}
+.item-view .Header h1,.sticky .Header h1{
+font-size:24px;
+line-height:24px;
+margin:0;
+text-align:left
+}
+.sticky .Header h1{
+color:#EEEEEE
+}
+.sticky .Header h1 a,.sticky .Header h1 a:hover,.sticky .Header h1 a:visited{
+color:#EEEEEE
+}
+.Header p{
+color:#ffffff;
+margin:0 0 13px 0;
+opacity:.8;
+text-align:center
+}
+.widget .title{
+line-height:28px
+}
+.BlogArchive li{
+font-size:16px
+}
+.BlogArchive .post-count{
+color:#EEEEEE
+}
+#page_body .FeaturedPost,.Blog .blog-posts .post-outer-container{
+background:#000000;
+min-height:40px;
+padding:30px 40px;
+width:auto
+}
+.Blog .blog-posts .post-outer-container:last-child{
+margin-bottom:0
+}
+.Blog .blog-posts .post-outer-container .post-outer{
+border:0;
+position:relative;
+padding-bottom:.25em
+}
+.post-outer-container{
+margin-bottom:16px
+}
+.post:first-child{
+margin-top:0
+}
+.post .thumb{
+float:left;
+height:20%;
+width:20%
+}
+.post-share-buttons-bottom,.post-share-buttons-top{
+float:right
+}
+.post-share-buttons-bottom{
+margin-right:24px
+}
+.post-footer,.post-header{
+clear:left;
+color:#9E9E9E;
+margin:0;
+width:inherit
+}
+.blog-pager{
+text-align:center
+}
+.blog-pager a{
+color:#0B8043
+}
+.blog-pager a:visited{
+color:#F57C00
+}
+.blog-pager a:hover{
+color:transparent
+}
+.post-title{
+font:normal bold 22px Ubuntu;
+float:left;
+margin:0 0 8px 0;
+max-width:calc(100% - 48px)
+}
+.post-title a{
+font:normal bold 30px Philosopher
+}
+.post-title,.post-title a,.post-title a:hover,.post-title a:visited{
+color:#FFFFFF
+}
+.post-body{
+color:#EEEEEE;
+font:normal normal 15px Josefin Sans;line-height:1.6em;
+margin:1.5em 0 2em 0;
+display:block
+}
+.post-body img{
+height:inherit
+}
+.post-body .snippet-thumbnail{
+float:left;
+margin:0;
+margin-right:2em;
+max-height:128px;
+max-width:128px
+}
+.post-body .snippet-thumbnail img{
+max-width:100%
+}
+.main .FeaturedPost .widget-content{
+border:0;
+position:relative;
+padding-bottom:.25em
+}
+.FeaturedPost img{
+margin-top:2em
+}
+.FeaturedPost .snippet-container{
+margin:2em 0
+}
+.FeaturedPost .snippet-container p{
+margin:0
+}
+.FeaturedPost .snippet-thumbnail{
+float:none;
+height:auto;
+margin-bottom:2em;
+margin-right:0;
+overflow:hidden;
+max-height:calc(600px + 2em);
+max-width:100%;
+text-align:center;
+width:100%
+}
+.FeaturedPost .snippet-thumbnail img{max-width:100%;
+width:100%
+}
+.byline{
+color:#9E9E9E;
+display:inline-block;
+line-height:24px;
+margin-top:8px;
+vertical-align:top
+}
+.byline.post-author:first-child{
+margin-right:0
+}
+.byline.reactions .reactions-label{
+line-height:22px;
+vertical-align:top
+}
+.byline.post-share-buttons{
+position:relative;
+display:inline-block;
+margin-top:0;
+width:100%
+}
+.byline.post-share-buttons .sharing{
+float:right
+}
+.flat-button.ripple:hover{
+background-color:rgba(11,128,67,.12)
+}
+.flat-button.ripple .splash{
+background-color:rgba(11,128,67,.4)
+}
+a.timestamp-link,a:active.timestamp-link,a:visited.timestamp-link{
+color:inherit;
+font:inherit;
+text-decoration:inherit
+}
+.post-share-buttons{
+margin-left:0
+}
+.clear-sharing{
+min-height:24px
+}
+.comment-link{
+color:#0B8043;
+position:relative
+}
+.comment-link .num_comments{
+margin-left:8px;
+vertical-align:top
+}
+#comment-holder .continue{
+display:none
+}
+#comment-editor{
+margin-bottom:20px;
+margin-top:20px
+}
+#comments .comment-form h4,#comments h3.title{
+position:absolute;
+clip:rect(1px,1px,1px,1px);
+padding:0;
+border:0;
+height:1px;
+width:1px;
+overflow:hidden
+}
+.post-filter-message{
+background-color:rgba(0,0,0,.7);
+color:#fff;
+display:table;
+margin-bottom:16px;
+width:100%
+}
+.post-filter-message div{
+display:table-cell;
+padding:15px 28px
+}
+.post-filter-message div:last-child{
+padding-left:0;
+text-align:right
+}
+.post-filter-message a{
+white-space:nowrap
+}
+.post-filter-message .search-label,.post-filter-message .search-query{
+font-weight:700;
+color:#0B8043
+}
+#blog-pager{
+margin:2em 0
+}
+#blog-pager a{
+color:#9E9E9E;
+font-size:14px
+}
+.subscribe-button{
+border-color:#ffffff;
+color:#ffffff
+}
+.sticky .subscribe-button{
+border-color:#EEEEEE;
+color:#EEEEEE
+}
+.tabs{
+margin:0 auto;
+padding:0
+}
+.tabs li{
+margin:0 8px;
+vertical-align:top
+}
+.tabs .overflow-button a,.tabs li a{
+color:#FFFFFF;
+font:normal bold 100% Josefin Sans;
+line-height:18px
+}
+.tabs .overflow-button a{
+padding:12px 8px
+}
+.overflow-popup .tabs li{
+text-align:left
+}
+.overflow-popup li a{
+color:#EEEEEE;
+display:block;
+padding:8px 20px
+}
+.overflow-popup li.selected a{
+color:#EEEEEE
+}
+a.report_abuse{
+font-weight:400
+}
+.Label li,.Label span.label-size,.byline.post-labels a{
+background-color:#9E9E9E;
+border:1px solid #9E9E9E;
+border-radius:15px;
+display:inline-block;
+margin:4px 4px 4px 0;
+padding:3px 8px
+}
+.Label a,.byline.post-labels a{
+color:#FFFFFF
+}
+.Label ul{
+list-style:none;
+padding:0
+}
+.PopularPosts{
+background-color:#3b3b3b;
+padding:30px 40px
+}
+.PopularPosts .item-content{
+color:#EEEEEE;
+margin-top:24px
+}
+.PopularPosts a,.PopularPosts a:hover,.PopularPosts a:visited{
+color:#0B8043
+}
+.PopularPosts .post-title,.PopularPosts .post-title a,.PopularPosts .post-title a:hover,.PopularPosts .post-title a:visited{
+color:#FFFFFF;
+font-size:18px;
+font-weight:700;
+line-height:24px
+}
+.PopularPosts,.PopularPosts h3.title a{
+color:#EEEEEE;
+font:normal normal 15px Josefin Sans
+}
+.main .PopularPosts{
+padding:16px 40px
+}
+.PopularPosts h3.title{
+font-size:14px;
+margin:0
+}
+.PopularPosts h3.post-title{
+margin-bottom:0
+}
+.PopularPosts .byline{
+color:#9E9E9E
+}
+.PopularPosts .jump-link{
+float:right;
+margin-top:16px
+}
+.PopularPosts .post-header .byline{
+font-size:.9em;
+font-style:italic;
+margin-top:6px
+}
+.PopularPosts ul{
+list-style:none;
+padding:0;
+margin:0
+}
+.PopularPosts .post{
+padding:20px 0
+}
+.PopularPosts .post+.post{
+border-top:1px dashed #9E9E9E
+}
+.PopularPosts .item-thumbnail{
+float:left;
+margin-right:32px
+}
+.PopularPosts .item-thumbnail img{
+height:88px;
+padding:0;
+width:88px
+}
+.inline-ad{
+margin-bottom:16px
+}
+.desktop-ad .inline-ad{
+display:block
+}
+.adsbygoogle{
+overflow:hidden
+}
+.vertical-ad-container{
+float:right;
+margin-right:16px;
+width:128px
+}
+.vertical-ad-container .AdSense+.AdSense{
+margin-top:16px
+}
+.inline-ad-placeholder,.vertical-ad-placeholder{
+background:#000000;
+border:1px solid #000;
+opacity:.9;
+vertical-align:middle;
+text-align:center
+}
+.inline-ad-placeholder span,.vertical-ad-placeholder span{
+margin-top:290px;
+display:block;
+text-transform:uppercase;
+font-weight:700;
+color:#FFFFFF
+}
+.vertical-ad-placeholder{
+height:600px
+}
+.vertical-ad-placeholder span{
+margin-top:290px;
+padding:0 40px
+}
+.inline-ad-placeholder{
+height:90px
+}
+.inline-ad-placeholder span{
+margin-top:36px
+}
+.Attribution{
+color:#EEEEEE
+}
+.Attribution a,.Attribution a:hover,.Attribution a:visited{
+color:#9E9E9E
+}
+.Attribution svg{
+fill:#9E9E9E
+}
+.sidebar-container{
+box-shadow:1px 1px 3px rgba(0,0,0,.1)}
+.sidebar-container,.sidebar-container .sidebar_bottom{
+background-color:#000000
+}
+.sidebar-container .navigation,.sidebar-container .sidebar_top_wrapper{
+background-color:#181717
+}
+.sidebar-container .sidebar_top{
+overflow:auto
+}
+.sidebar-container .sidebar_bottom{
+width:100%;
+padding-top:16px
+}
+.sidebar-container .widget:first-child{
+padding-top:0
+}
+.sidebar_top .widget.Profile{
+padding-bottom:16px
+}
+.widget.Profile{
+margin:0;
+width:100%
+}
+.widget.Profile h2{
+display:none
+}
+.widget.Profile h3.title{
+color:#FFFFFF;
+margin:16px 32px
+}
+.widget.Profile .individual{
+text-align:center
+}
+.widget.Profile .individual .profile-link{
+padding:1em
+}
+.widget.Profile .individual .default-avatar-wrapper .avatar-icon{
+margin:auto
+}
+.widget.Profile .team{
+margin-bottom:32px;
+margin-left:32px;
+margin-right:32px
+}
+.widget.Profile ul{
+list-style:none;
+padding:0
+}
+.widget.Profile li{
+margin:10px 0
+}
+.widget.Profile .profile-img{
+border-radius:50%;
+float:none
+}
+.widget.Profile .profile-link{
+color:#FFFFFF;
+font-size:.9em;
+margin-bottom:1em;
+opacity:.87;
+overflow:hidden
+}
+.widget.Profile .profile-link.visit-profile{
+border-style:solid;
+border-width:1px;
+border-radius:12px;
+cursor:pointer;
+font-size:12px;
+font-weight:400;
+padding:5px 20px;
+display:inline-block;
+line-height:normal
+}
+.widget.Profile dd{
+color:#9E9E9E;
+margin:0 16px
+}
+.widget.Profile location{
+margin-bottom:1em
+}
+.widget.Profile .profile-textblock{
+font-size:14px;
+line-height:24px;
+position:relative
+}
+body.sidebar-visible .page_body{
+overflow-y:scroll
+}
+body.sidebar-visible .bg-photo-container{
+overflow-y:scroll
+}
+@media screen and (min-width:2978px){.sidebar-container{
+margin-top:420px;
+min-height:calc(100% - 420px);
+overflow:visible;
+z-index:32
+}
+.sidebar-container .sidebar_top_wrapper{
+background-color:#1c1b1b;
+height:420px;
+margin-top:-420px
+}
+.sidebar-container .sidebar_top{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+height:420px;
+-webkit-box-orient:horizontal;
+-webkit-box-direction:normal;
+-webkit-flex-direction:row;
+-ms-flex-direction:row;
+flex-direction:row;
+max-height:420px
+}
+.sidebar-container .sidebar_bottom{
+max-width:344px;
+width:344px
+}
+body.collapsed-header .sidebar-container{
+z-index:15
+}
+.sidebar-container .sidebar_top:empty{
+display:none
+}
+.sidebar-container .sidebar_top>:only-child{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+-webkit-align-self:center;
+-ms-flex-item-align:center;
+align-self:center;
+width:100%
+}
+.sidebar_top_wrapper.no-items{
+display:none
+}
+}
+.post-snippet.snippet-container{
+max-height:120px
+}
+.post-snippet .snippet-item{
+line-height:24px
+}
+.post-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#000000 0,#000000 20%,rgba(0, 0, 0, 0) 100%);
+background:linear-gradient(to left,#000000 0,#000000 20%,rgba(0, 0, 0, 0) 100%);
+color:#757575;
+height:24px
+}
+.popular-posts-snippet.snippet-container{
+max-height:72px
+}
+.popular-posts-snippet .snippet-item{line-height:24px
+}
+.PopularPosts .popular-posts-snippet .snippet-fade{
+color:#757575;
+height:24px
+}
+.main .popular-posts-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#3b3b3b 0,#3b3b3b 20%,rgba(59, 59, 59, 0) 100%);
+background:linear-gradient(to left,#3b3b3b 0,#3b3b3b 20%,rgba(59, 59, 59, 0) 100%)
+}
+.sidebar_bottom .popular-posts-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#000000 0,#000000 20%,rgba(0, 0, 0, 0) 100%);
+background:linear-gradient(to left,#000000 0,#000000 20%,rgba(0, 0, 0, 0) 100%)
+}
+.profile-snippet.snippet-container{
+max-height:192px
+}
+.has-location .profile-snippet.snippet-container{
+max-height:144px
+}
+.profile-snippet .snippet-item{
+line-height:24px
+}
+.profile-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#181717 0,#181717 20%,rgba(24, 23, 23, 0) 100%);
+background:linear-gradient(to left,#181717 0,#181717 20%,rgba(24, 23, 23, 0) 100%);
+color:#9E9E9E;
+height:24px
+}
+@media screen and (min-width:2978px){.profile-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#1c1b1b 0,#1c1b1b 20%,rgba(28, 27, 27, 0) 100%);
+background:linear-gradient(to left,#1c1b1b 0,#1c1b1b 20%,rgba(28, 27, 27, 0) 100%)
+}
+}
+@media screen and (max-width:800px){
+.blog-name{
+margin-top:0
+}
+body.item-view .blog-name{
+margin:0 48px
+}
+.centered-bottom{
+padding:8px
+}
+body.item-view .centered-bottom{
+padding:0
+}
+.page_body .centered{
+padding:10px 0
+}
+body.item-view #header,body.item-view .widget.Header{
+margin-right:0
+}
+body.collapsed-header .centered-top-container .blog-name{
+display:block
+}
+body.collapsed-header .centered-top-container .widget.Header h1{
+text-align:center
+}
+.widget.Header header{
+padding:0
+}
+.widget.Header h1{
+font-size:24px;
+line-height:24px;
+margin-bottom:13px
+}
+body.item-view .widget.Header h1{
+text-align:center
+}
+body.item-view .widget.Header p{
+text-align:center
+}
+.blog-name .widget.PageList{
+padding:0
+}
+body.item-view .centered-top{
+margin-bottom:5px
+}
+.search-action,.search-input{
+margin-bottom:-8px
+}
+.search form{
+margin-bottom:8px
+}
+body.item-view .subscribe-section-container{
+margin:5px 0 0 0;
+width:100%
+}
+#page_body.section div.widget.FeaturedPost,div.widget.PopularPosts{
+padding:16px
+}
+div.widget.Blog .blog-posts .post-outer-container{
+padding:16px
+}
+div.widget.Blog .blog-posts .post-outer-container .post-outer{
+padding:0
+}
+.post:first-child{
+margin:0
+}
+.post-body .snippet-thumbnail{
+margin:0 3vw 3vw 0
+}
+.post-body .snippet-thumbnail img{
+height:20vw;
+width:20vw;
+max-height:128px;
+max-width:128px
+}
+div.widget.PopularPosts div.item-thumbnail{
+margin:0 3vw 3vw 0
+}
+div.widget.PopularPosts div.item-thumbnail img{
+height:20vw;
+width:20vw;
+max-height:88px;
+max-width:88px
+}
+.post-title{
+line-height:1
+}
+.post-title,.post-title a{
+font-size:20px
+}
+#page_body.section div.widget.FeaturedPost h3 a{
+font-size:22px
+}
+.mobile-ad .inline-ad{
+display:block
+}
+.page_body.has-vertical-ads .vertical-ad-container,.page_body.has-vertical-ads .vertical-ad-container ins{
+display:none
+}
+.page_body.has-vertical-ads .centered .centered-bottom,.page_body.has-vertical-ads .centered .centered-top{
+display:block;
+width:auto
+}
+div.post-filter-message div{
+padding:8px 16px
+}
+}
+@media screen and (min-width:2978px){body{
+position:relative
+}
+body.item-view .blog-name{
+margin-left:48px
+}
+.page_body{
+margin-left:344px
+}
+.search{
+margin-left:0
+}
+.search.focused{
+width:100%
+}
+.sticky{
+padding-left:344px
+}
+.hamburger-menu{
+display:none
+}
+body.collapsed-header .page_body .centered-top-container{
+padding-left:344px;
+padding-right:0;
+width:100%
+}
+body.collapsed-header .centered-top-container .search.focused{
+width:100%
+}
+body.collapsed-header .centered-top-container .blog-name{
+margin-left:0
+}
+body.collapsed-header.item-view .centered-top-container .search.focused{
+width:calc(100% - 50px)
+}
+body.collapsed-header.item-view .centered-top-container .blog-name{
+margin-left:40px
+}
+}
+.post-title {
+opacity: 0;
+animation: fade-in 1s ease-in-out forwards;
+}
+@keyframes fade-in {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+/* Apply a smooth image zoom and move animation on hover */
+img {
+transition: transform 0.3s ease;
+}
+img:hover {
+animation: zoomAndMove 0.9s ease;
+animation-fill-mode: forwards;
+}
+@keyframes zoomAndMove {
+0% {
+transform: translateY(0) scale(1);
+}
+50% {
+transform: translateY(10px) scale(0.9); /* Move down slightly and scale down */
+}
+100% {
+transform: translateY(-10px) scale(1.1); /* Move up and scale up */
+}
+}
+/* Element rotate on hover */
+.rotate-animation {
+transition: transform 0.3s ease;
+}
+.rotate-animation:hover {
+transform: rotate(15deg);
+}
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body#layout .hidden,
+body#layout .invisible {
+display: inherit;
+}
+body#layout .navigation {
+display: none;
+}
+body#layout .page,
+body#layout .sidebar_top,
+body#layout .sidebar_bottom {
+display: inline-block;
+left: inherit;
+position: relative;
+vertical-align: top;
+}
+body#layout .page {
+float: right;
+margin-left: 20px;
+width: 55%;
+}
+body#layout .sidebar-container {
+float: right;
+width: 40%;
+}
+body#layout .hamburger-menu {
+display: none;
+}
+--></style>
+<style>
+    .bg-photo {background-image:url(https\:\/\/themes.googleusercontent.com\/image?id=1uK3asOUTXGHOxBp5SzQi9-XgNXEKZ36dz3ulQ9zIinkHa_wkts_jwC2cKfeghsEwd8xV);}
+
+@media (max-width: 480px) { .bg-photo {background-image:url(https\:\/\/themes.googleusercontent.com\/image?id=1uK3asOUTXGHOxBp5SzQi9-XgNXEKZ36dz3ulQ9zIinkHa_wkts_jwC2cKfeghsEwd8xV&options=w480);}}
+@media (max-width: 640px) and (min-width: 481px) { .bg-photo {background-image:url(https\:\/\/themes.googleusercontent.com\/image?id=1uK3asOUTXGHOxBp5SzQi9-XgNXEKZ36dz3ulQ9zIinkHa_wkts_jwC2cKfeghsEwd8xV&options=w640);}}
+@media (max-width: 800px) and (min-width: 641px) { .bg-photo {background-image:url(https\:\/\/themes.googleusercontent.com\/image?id=1uK3asOUTXGHOxBp5SzQi9-XgNXEKZ36dz3ulQ9zIinkHa_wkts_jwC2cKfeghsEwd8xV&options=w800);}}
+@media (max-width: 1200px) and (min-width: 801px) { .bg-photo {background-image:url(https\:\/\/themes.googleusercontent.com\/image?id=1uK3asOUTXGHOxBp5SzQi9-XgNXEKZ36dz3ulQ9zIinkHa_wkts_jwC2cKfeghsEwd8xV&options=w1200);}}
+/* Last tag covers anything over one higher than the previous max-size cap. */
+@media (min-width: 1201px) { .bg-photo {background-image:url(https\:\/\/themes.googleusercontent.com\/image?id=1uK3asOUTXGHOxBp5SzQi9-XgNXEKZ36dz3ulQ9zIinkHa_wkts_jwC2cKfeghsEwd8xV&options=w1600);}}
+  </style>
+<script async='async' src='https://www.gstatic.com/external_hosted/clipboardjs/clipboard.min.js'></script>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=5393488923647438845&amp;zx=e9588d87-7537-4d1e-a66d-d906c037262a' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=5393488923647438845&amp;zx=e9588d87-7537-4d1e-a66d-d906c037262a' rel='stylesheet'/></noscript>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6740780793149429&host=ca-host-pub-1556223355139109" crossorigin="anonymous"></script>
+
+<!-- data-ad-client=ca-pub-6740780793149429 -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Raleway&family=Josefin+Sans&family=Poppins"></head>
+<body class='item-view version-1-3-3 variant-indie_light'>
+<a class='skip-navigation' href='#main' tabindex='0'>
+Skip to main content
+</a>
+<div class='page'>
+<div class='bg-photo-overlay'></div>
+<div class='bg-photo-container'>
+<div class='bg-photo'></div>
+</div>
+<div class='page_body has-vertical-ads'>
+<div class='centered'>
+<div class='centered-top-placeholder'></div>
+<header class='centered-top-container' role='banner'>
+<div class='centered-top'>
+<a class='return_link' href='https://my-projects-in-c.blogspot.com/?m=1'>
+<button class='svg-icon-24-button back-button rtl-reversible-icon flat-icon-button ripple'>
+<svg class='svg-icon-24'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_arrow_back_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</button>
+</a>
+<div class='search'>
+<button aria-label='Search' class='search-expand touch-icon-button'>
+<div class='flat-icon-button ripple'><svg class='svg-icon-24 search-expand-icon'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_search_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+</button>
+<div class='section' id='search_top' name='Search (Top)'><div class='widget BlogSearch' data-version='2' id='BlogSearch1'>
+<h3 class='title'>
+Search This Blog
+</h3>
+<div class='widget-content' role='search'>
+<form action='https://my-projects-in-c.blogspot.com/search' target='_top'><div class='search-input'>
+<input aria-label='Search this blog' autocomplete='off' name='q' placeholder='Search this blog' value=''/>
+</div>
+<input class='search-action flat-button' type='submit' value='Search'/>
+</form>
+</div>
+</div></div>
+</div>
+<div class='clearboth'></div>
+<div class='blog-name container'>
+<div class='container section' id='header' name='Header'><div class='widget Header' data-version='2' id='Header1'>
+<div class='header-widget'>
+<div>
+<h1>
+<a href='https://my-projects-in-c.blogspot.com/?m=1'>
+Our Projects in C Language
+</a>
+</h1>
+</div>
+<p>
+This blog is not even a blog!! Because this is only for second space of my programming source code.
+</p>
+</div>
+</div></div>
+<nav role='navigation'>
+<div class='clearboth section' id='page_list_top' name='Page List (Top)'>
+</div>
+</nav>
+</div>
+</div>
+</header>
+<div>
+<div class='vertical-ad-container section' id='ads' name='Ads'><div class='widget AdSense' data-version='2' id='AdSense1'>
+<div class='widget-content'>
+<ins class='adsbygoogle' data-ad-client='ca-pub-6740780793149429' data-ad-format='auto' data-ad-host='ca-host-pub-1556223355139109' style='/* Done in css. */'>
+</ins>
+<script>
+   (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+</div><div class='widget AdSense' data-version='2' id='AdSense2'>
+<div class='widget-content'>
+<ins class='adsbygoogle' data-ad-client='ca-pub-6740780793149429' data-ad-format='auto' data-ad-host='ca-host-pub-1556223355139109' style='/* Done in css. */'>
+</ins>
+<script>
+   (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+</div></div>
+<main class='centered-bottom' id='main' role='main' tabindex='-1'>
+<div class='main section' id='page_body' name='Page Body'>
+<div class='widget Blog' data-version='2' id='Blog1'>
+<div class='blog-posts hfeed container'>
+<article class='post-outer-container'>
+<div class='post-outer'>
+<div class='post'>
+<script type='application/ld+json'>{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html"
+  },
+  "headline": "Multiplication Table","description": "Multiplication Table by Mohit Purohit                                          Copy Code               ...","datePublished": "2022-05-14T01:24:00-07:00",
+  "dateModified": "2023-06-20T10:52:16-07:00","image": {
+    "@type": "ImageObject","url": "https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/w1200/",
+    "height": 348,
+    "width": 1200},"publisher": {
+    "@type": "Organization",
+    "name": "Blogger",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/h60/",
+      "width": 206,
+      "height": 60
+    }
+  },"author": {
+    "@type": "Person",
+    "name": "Mohit Purohit"
+  }
+}</script>
+<a name='7765236652540864769'></a>
+<h3 class='post-title entry-title'>
+Multiplication Table
+</h3>
+<div class='post-share-buttons post-share-buttons-top'>
+<div class='byline post-share-buttons goog-inline-block'>
+<div aria-owns='sharing-popup-Blog1-byline-7765236652540864769' class='sharing' data-title='Multiplication Table '>
+<button aria-controls='sharing-popup-Blog1-byline-7765236652540864769' aria-label='Share' class='sharing-button touch-icon-button' id='sharing-button-Blog1-byline-7765236652540864769' role='button'>
+<div class='flat-icon-button ripple'><svg class='svg-icon-24'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_share_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+</button>
+<div class='share-buttons-container'><ul aria-hidden='true' aria-label='Share' class='share-buttons hidden' id='sharing-popup-Blog1-byline-7765236652540864769' role='menu'>
+<li>
+<span aria-label='Get link' class='sharing-platform-button sharing-element-link' data-href='https://www.blogger.com/share-post.g?blogID=5393488923647438845&postID=7765236652540864769&target=' data-url='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m=1' role='menuitem' tabindex='-1' title='Get link'>
+<svg class='svg-icon-24 touch-icon sharing-link'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_link_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Get link</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Facebook' class='sharing-platform-button sharing-element-facebook' data-href='https://www.blogger.com/share-post.g?blogID=5393488923647438845&postID=7765236652540864769&target=facebook' data-url='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m=1' role='menuitem' tabindex='-1' title='Share to Facebook'>
+<svg class='svg-icon-24 touch-icon sharing-facebook'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_facebook_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Twitter' class='sharing-platform-button sharing-element-twitter' data-href='https://www.blogger.com/share-post.g?blogID=5393488923647438845&postID=7765236652540864769&target=twitter' data-url='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m=1' role='menuitem' tabindex='-1' title='Share to Twitter'>
+<svg class='svg-icon-24 touch-icon sharing-twitter'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_twitter_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Twitter</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Pinterest' class='sharing-platform-button sharing-element-pinterest' data-href='https://www.blogger.com/share-post.g?blogID=5393488923647438845&postID=7765236652540864769&target=pinterest' data-url='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m=1' role='menuitem' tabindex='-1' title='Share to Pinterest'>
+<svg class='svg-icon-24 touch-icon sharing-pinterest'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_pinterest_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label='Email' class='sharing-platform-button sharing-element-email' data-href='https://www.blogger.com/share-post.g?blogID=5393488923647438845&postID=7765236652540864769&target=email' data-url='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m=1' role='menuitem' tabindex='-1' title='Email'>
+<svg class='svg-icon-24 touch-icon sharing-email'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Email</span>
+</span>
+</li>
+<li aria-hidden='true' class='hidden'>
+<span aria-label='Share to other apps' class='sharing-platform-button sharing-element-other' data-url='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m=1' role='menuitem' tabindex='-1' title='Share to other apps'>
+<svg class='svg-icon-24 touch-icon sharing-sharingOther'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_more_horiz_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Other Apps</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='post-header'>
+<div class='post-header-line-1'>
+<span class='byline post-author vcard'>
+<span class='post-author-label'>
+By
+</span>
+<span class='fn'>
+<meta content='https://www.blogger.com/profile/11283248926731737498'/>
+<a class='g-profile' href='https://www.blogger.com/profile/11283248926731737498' rel='author' title='author profile'>
+<span>Mohit Purohit </span>
+</a>
+</span>
+</span>
+<span class='byline post-timestamp'>
+<meta content='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html'/>
+<a class='timestamp-link' href='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m=1' rel='bookmark' title='permanent link'>
+<time class='published' datetime='2022-05-14T01:24:00-07:00' title='2022-05-14T01:24:00-07:00'>
+May 14, 2022
+</time>
+</a>
+</span>
+</div>
+</div>
+<div class='post-body entry-content float-container' id='post-body-7765236652540864769'>
+<h2 style="text-align: left;"><b>Multiplication Table by Mohit Purohit</b></h2>
+
+<html>
+
+  <head>
+
+    <div class="loader">
+  <div class="background"></div>
+  <div class="squares">
+    <div class="square square1"></div>
+    <div class="square square2"></div>
+    <div class="square square3"></div>
+    <div class="square square4"></div>
+    <div class="square square5"></div>
+  </div>
+</div>
+
+
+
+
+<script>
+  window.addEventListener('load', function() {
+
+  // Get the default Chrome loader element
+
+  var chromeLoader = document.querySelector('.chrome-loader');
+
+  // Hide the default Chrome loader
+
+  chromeLoader.style.display = 'none';
+
+});
+
+
+
+
+window.addEventListener('load', function() {
+  var loader = document.querySelector('.loader');
+  loader.parentNode.removeChild(loader);
+  var background = document.querySelector('.background-wrapper');
+  background.style.display = 'none';
+});
+
+
+
+</script>
+
+
+
+
+
+
+
+    <style>
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.squares {
+  position: relative;
+  width: 250px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  background-color: #FFC400;
+  animation: slide 2s infinite;
+}
+
+.square:nth-child(2) {
+  background-color: #FF9100;
+  animation-delay: 0.4s;
+}
+
+.square:nth-child(3) {
+  background-color: #FF6D00;
+  animation-delay: 0.8s;
+}
+
+.square:nth-child(4) {
+  background-color: #FF5100;
+  animation-delay: 1.2s;
+}
+
+.square:nth-child(5) {
+  background-color: #FF3D00;
+  animation-delay: 1.6s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  20% {
+    transform: translateX(0) translateY(-100%);
+  }
+  40% {
+    transform: translateX(100%) translateY(-100%);
+  }
+  60% {
+    transform: translateX(100%) translateY(0);
+  }
+  80% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+
+
+  </style>
+
+    <!-- Copy button -->
+
+    <button class="copy-button">Copy Code</button>
+
+    <style>
+
+      /* Style for the copy button */
+      .copy-button {
+
+position: relative;
+
+            display: inline-block;
+
+            font-size: 16px;
+
+            padding: 12px 30px;
+
+            border: none;
+
+            color: #fff;
+
+            text-transform: uppercase;
+
+            font-weight: bold;
+
+            letter-spacing: 1px;
+        background: linear-gradient(to right, #8000FF, #FF00FF, #00FF00);
+
+            background-size: 200% auto;
+
+            border-radius: 40px;
+
+            cursor: pointer;
+
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            overflow: hidden;
+
+            z-index: 1;
+
+            transition: 0.3s;
+
+
+
+          }
+
+      .copy-button:after {
+
+            content: "";
+
+            position: absolute;
+
+            top: -50%;
+
+            left: -210%;
+
+            width: 400%;
+
+            height: 200%;
+
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+
+            transition: 0.5s;
+
+            z-index: -1;
+
+            }
+
+
+
+
+
+       .copy-button:hover {
+
+          background-position: right center;
+
+            color: #fff;
+
+        }
+
+      .copy-button:hover:after {
+
+            top: -10%;
+
+            left: -10%;
+
+        }
+
+
+
+
+
+    </style>
+
+  </head>
+  <body>
+
+    <!-- Code snippet container -->
+
+    <code class="language-html"><!-- Your highlighted syntax code here -->      <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(39, 40, 34); color: rgb(221, 221, 221);"><span class="hljs-comment" style="color: rgb(117, 113, 94);">/*
+
+Creator - Mohit Purohit
+
+Date      - 15 Feb. 2022
+
+Time     - 8:00 P.M.
+
+*/</span>
+
+<span class="hljs-meta" style="color: rgb(117, 113, 94);">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-meta" style="color: rgb(117, 113, 94);">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;conio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(166, 226, 46); font-weight: 700;">main</span><span class="hljs-params">()</span>
+
+</span>{
+
+    clrscr();
+
+    <span class="hljs-comment" style="color: rgb(117, 113, 94);">// Now I declare a variable and this name is 'num'. 'num' means number.</span>
+
+    <span class="hljs-comment" style="color: rgb(117, 113, 94);">// 'num' is a 'int'. 'num' means integer value.</span>
+
+    <span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">int</span> num, restart = <span class="hljs-number">0</span>;
+
+    <span class="hljs-comment" style="color: rgb(117, 113, 94);">// Here I use do while loop for restart this program.</span>
+
+    <span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">do</span>
+
+    {
+
+        <span class="hljs-comment" style="color: rgb(117, 113, 94);">// User enter a number</span>
+
+        <span class="hljs-built_in" style="color: rgb(166, 226, 46);">printf</span>(<span class="hljs-string" style="color: rgb(166, 226, 46);">"Enter the number whose multiplication table you want to get.\n\n"</span>);
+
+        <span class="hljs-built_in" style="color: rgb(166, 226, 46);">scanf</span>(<span class="hljs-string" style="color: rgb(166, 226, 46);">"%d"</span>, &amp;num);
+
+        <span class="hljs-comment" style="color: rgb(117, 113, 94);">//Presenting Multiplication Table</span>
+
+        <span class="hljs-built_in" style="color: rgb(166, 226, 46);">printf</span>(<span class="hljs-string" style="color: rgb(166, 226, 46);">"\nMultiplication Table of %d is -\n\n"</span>, num);
+
+        <span class="hljs-comment" style="color: rgb(117, 113, 94);">// I am using two methods for printing multiplication table.</span>
+
+        <span class="hljs-comment" style="color: rgb(117, 113, 94);">// I am using for loop in both methods for printing the multiplication table.</span>
+
+        <span class="hljs-comment" style="color: rgb(117, 113, 94);">/*
+
+  Method 1 -
+
+
+
+  for    (int i = 0 ; i &lt;10; i++)
+
+
+
+  {
+
+      printf ("%d &#215; %d = %d\n" ,num , i+1 , (i+1)*num);
+
+   }
+
+   */</span>
+
+        <span class="hljs-comment" style="color: rgb(117, 113, 94);">// Method 2 -</span>
+
+        <span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">for</span> (<span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">int</span> i = <span class="hljs-number">1</span>; i &lt;= <span class="hljs-number">10</span>; i++)
+
+        {
+
+            <span class="hljs-built_in" style="color: rgb(166, 226, 46);">printf</span>(<span class="hljs-string" style="color: rgb(166, 226, 46);">"%d &#215; %d = %d\n"</span>, num, i, i * num);
+
+        }
+
+        <span class="hljs-built_in" style="color: rgb(166, 226, 46);">printf</span>(<span class="hljs-string" style="color: rgb(166, 226, 46);">" \n\n\n\n\nAre you want to explore another multiplication table? \nIf yes so write '1' otherwise you may enter any number\n"</span>);
+
+        <span class="hljs-built_in" style="color: rgb(166, 226, 46);">scanf</span>(<span class="hljs-string" style="color: rgb(166, 226, 46);">"%d"</span>, &amp;restart);
+
+        <span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">if</span> (restart == <span class="hljs-number">1</span>)
+
+        {
+
+            clrscr();
+
+        }
+
+    } <span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">while</span> (restart == <span class="hljs-number">1</span>);
+
+    <span class="hljs-comment" style="color: rgb(117, 113, 94);">//Thanks to user</span>
+
+    <span class="hljs-built_in" style="color: rgb(166, 226, 46);">printf</span>(<span class="hljs-string" style="color: rgb(166, 226, 46);">"\n\n\n👦👦I hope this is helpful for you👦👦\n\t - Mohit Purohit  \n\n\n\n"</span>);
+
+    getch();
+
+    <span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">return</span> <span class="hljs-number">0</span>;
+
+}</pre>
+      </code>
+
+    <script>
+
+      // Copy code to clipboard
+
+      const copyButton = document.querySelector('.copy-button');
+
+      const codeSnippet = document.querySelector('.language-html');
+
+      copyButton.addEventListener('click', () => {
+
+          const codeToCopy = codeSnippet.textContent;
+
+          navigator.clipboard.writeText(codeToCopy)
+
+              .then(() => {
+
+                  alert('Code copied to clipboard!');
+
+              })
+
+              .catch((error) => {
+
+                  console.error('Unable to copy code:', error);
+            });
+
+      });
+
+    </script>
+
+  </body>
+
+</html>
+</div>
+<div class='post-bottom'>
+<div class='post-footer float-container'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='byline post-icons'>
+<span class='item-action'>
+<a href='https://www.blogger.com/email-post.g?blogID=5393488923647438845&postID=7765236652540864769' title='Email Post'>
+<svg class='svg-icon-24 touch-icon sharing-icon'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</a>
+</span>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+</div>
+<div class='author-profile'>
+<div class='author-name'>
+<a class='g-profile' href='https://www.blogger.com/profile/11283248926731737498' rel='author' title='author profile'>
+<span>
+Mohit Purohit
+</span>
+</a>
+</div>
+<div>
+<span class='author-desc'>
+(Programmers cum Students)
+</span>
+</div>
+</div>
+</div>
+<div class='post-share-buttons post-share-buttons-bottom invisible'>
+<div class='byline post-share-buttons goog-inline-block'>
+<div aria-owns='sharing-popup-Blog1-byline-7765236652540864769' class='sharing' data-title='Multiplication Table '>
+<button aria-controls='sharing-popup-Blog1-byline-7765236652540864769' aria-label='Share' class='sharing-button touch-icon-button' id='sharing-button-Blog1-byline-7765236652540864769' role='button'>
+<div class='flat-icon-button ripple'><svg class='svg-icon-24'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_share_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+</button>
+<div class='share-buttons-container'><ul aria-hidden='true' aria-label='Share' class='share-buttons hidden' id='sharing-popup-Blog1-byline-7765236652540864769' role='menu'>
+<li>
+<span aria-label='Get link' class='sharing-platform-button sharing-element-link' data-href='https://www.blogger.com/share-post.g?blogID=5393488923647438845&postID=7765236652540864769&target=' data-url='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m=1' role='menuitem' tabindex='-1' title='Get link'>
+<svg class='svg-icon-24 touch-icon sharing-link'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_link_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Get link</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Facebook' class='sharing-platform-button sharing-element-facebook' data-href='https://www.blogger.com/share-post.g?blogID=5393488923647438845&postID=7765236652540864769&target=facebook' data-url='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m=1' role='menuitem' tabindex='-1' title='Share to Facebook'>
+<svg class='svg-icon-24 touch-icon sharing-facebook'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_facebook_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Twitter' class='sharing-platform-button sharing-element-twitter' data-href='https://www.blogger.com/share-post.g?blogID=5393488923647438845&postID=7765236652540864769&target=twitter' data-url='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m=1' role='menuitem' tabindex='-1' title='Share to Twitter'>
+<svg class='svg-icon-24 touch-icon sharing-twitter'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_twitter_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Twitter</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Pinterest' class='sharing-platform-button sharing-element-pinterest' data-href='https://www.blogger.com/share-post.g?blogID=5393488923647438845&postID=7765236652540864769&target=pinterest' data-url='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m=1' role='menuitem' tabindex='-1' title='Share to Pinterest'>
+<svg class='svg-icon-24 touch-icon sharing-pinterest'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_pinterest_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label='Email' class='sharing-platform-button sharing-element-email' data-href='https://www.blogger.com/share-post.g?blogID=5393488923647438845&postID=7765236652540864769&target=email' data-url='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m=1' role='menuitem' tabindex='-1' title='Email'>
+<svg class='svg-icon-24 touch-icon sharing-email'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Email</span>
+</span>
+</li>
+<li aria-hidden='true' class='hidden'>
+<span aria-label='Share to other apps' class='sharing-platform-button sharing-element-other' data-url='https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m=1' role='menuitem' tabindex='-1' title='Share to other apps'>
+<svg class='svg-icon-24 touch-icon sharing-sharingOther'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_more_horiz_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Other Apps</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class='comments embed' data-num-comments='0' id='comments'>
+<a name='comments'></a>
+<h3 class='title'>Comments</h3>
+<div id='Blog1_comments-block-wrapper'>
+</div>
+<div class='footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<h4 id='comment-post-message'>Post a Comment</h4>
+<a href='https://www.blogger.com/comment/frame/5393488923647438845?po=7765236652540864769&hl=en&m=1&skin=contempo' id='comment-editor-src'></a>
+<iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410px' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+<script src='https://www.blogger.com/static/v1/jsbin/3988816102-comment_from_post_iframe.js' type='text/javascript'></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+    </script>
+</div>
+</div>
+</section>
+</article>
+</div>
+</div><div class='widget PopularPosts' data-version='2' id='PopularPosts1'>
+<h3 class='title'>
+Popular posts from this blog
+</h3>
+<div class='widget-content'>
+<div role='feed'>
+<article class='post' role='article'><h3 class='post-title'><a href='https://my-projects-in-c.blogspot.com/2022/10/unit-convertor.html?m=1'>Unit Converter </a></h3>
+<div class='post-header'>
+<div class='post-header-line-1'>
+<span class='byline post-author vcard'>
+<span class='post-author-label'>
+By
+</span>
+<span class='fn'>
+<meta content='https://www.blogger.com/profile/11283248926731737498'/>
+<a class='g-profile' href='https://www.blogger.com/profile/11283248926731737498' rel='author' title='author profile'>
+<span>Mohit Purohit </span>
+</a>
+</span>
+</span>
+<span class='byline post-timestamp'>
+<meta content='https://my-projects-in-c.blogspot.com/2022/10/unit-convertor.html'/>
+<a class='timestamp-link' href='https://my-projects-in-c.blogspot.com/2022/10/unit-convertor.html?m=1' rel='bookmark' title='permanent link'>
+<time class='published' datetime='2022-10-08T11:04:00-07:00' title='2022-10-08T11:04:00-07:00'>
+October 08, 2022
+</time>
+</a>
+</span>
+</div>
+</div>
+<div class='item-content float-container'>
+<div class='item-thumbnail'>
+<a href='https://my-projects-in-c.blogspot.com/2022/10/unit-convertor.html?m=1'>
+<img alt='Image' sizes='72px' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicorj7atqpLkH0GdFsSE0CVUENqu92cJT14pvAMHCNDldPJCdvEkFXOaHfrEudVGUCFayt6ov79ZQ9KaS_prz8QftIdKFD_oGzd25wKn3TSs6GTEzWsFBK-zQIiGiyOjyq6TQzxXDIM7XTsu2GbG-51TsJF8lpTZ9VJC2EdhcmLWyVcKlYwRAjiCCW/s16000/SAVE_20230330_240734.jpg' srcset='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicorj7atqpLkH0GdFsSE0CVUENqu92cJT14pvAMHCNDldPJCdvEkFXOaHfrEudVGUCFayt6ov79ZQ9KaS_prz8QftIdKFD_oGzd25wKn3TSs6GTEzWsFBK-zQIiGiyOjyq6TQzxXDIM7XTsu2GbG-51TsJF8lpTZ9VJC2EdhcmLWyVcKlYwRAjiCCW/w72-h72-p-k-no-nu/SAVE_20230330_240734.jpg 72w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicorj7atqpLkH0GdFsSE0CVUENqu92cJT14pvAMHCNDldPJCdvEkFXOaHfrEudVGUCFayt6ov79ZQ9KaS_prz8QftIdKFD_oGzd25wKn3TSs6GTEzWsFBK-zQIiGiyOjyq6TQzxXDIM7XTsu2GbG-51TsJF8lpTZ9VJC2EdhcmLWyVcKlYwRAjiCCW/w144-h144-p-k-no-nu/SAVE_20230330_240734.jpg 144w'/>
+</a>
+</div>
+<div class='popular-posts-snippet snippet-container r-snippet-container'>
+<div class='snippet-item r-snippetized'>
+    I&#39;ve uploaded it as a file you can look at it&#39;s source code by clicking on the link 👉 &#160; Unit Converter &#160;:) Process :- Click on the  Unit Converter &#160;&gt;&gt;&gt; Choose your Gmail account &gt;&gt;&gt; Copy source code &gt;&gt;&gt; Paste this code to your IDE &lt;/&gt; Analyse the code and enjoy the output  👨&#8205;💻                             Copy Code                          </div>
+<a class='snippet-fade r-snippet-fade hidden' href='https://my-projects-in-c.blogspot.com/2022/10/unit-convertor.html?m=1'></a>
+</div>
+<div class='jump-link flat-button ripple'>
+<a href='https://my-projects-in-c.blogspot.com/2022/10/unit-convertor.html?m=1' title='Unit Converter '>
+Read more
+</a>
+</div>
+</div>
+</article>
+<article class='post' role='article'><h3 class='post-title'><a href='https://my-projects-in-c.blogspot.com/2023/02/CLanguageTutorial.html?m=1'>C Language By CodeWithHarry </a></h3>
+<div class='post-header'>
+<div class='post-header-line-1'>
+<span class='byline post-author vcard'>
+<span class='post-author-label'>
+By
+</span>
+<span class='fn'>
+<meta content='https://www.blogger.com/profile/11283248926731737498'/>
+<a class='g-profile' href='https://www.blogger.com/profile/11283248926731737498' rel='author' title='author profile'>
+<span>Mohit Purohit </span>
+</a>
+</span>
+</span>
+<span class='byline post-timestamp'>
+<meta content='https://my-projects-in-c.blogspot.com/2023/02/CLanguageTutorial.html'/>
+<a class='timestamp-link' href='https://my-projects-in-c.blogspot.com/2023/02/CLanguageTutorial.html?m=1' rel='bookmark' title='permanent link'>
+<time class='published' datetime='2023-02-25T21:34:00-08:00' title='2023-02-25T21:34:00-08:00'>
+February 25, 2023
+</time>
+</a>
+</span>
+</div>
+</div>
+<div class='item-content float-container'>
+<div class='popular-posts-snippet snippet-container r-snippet-container'>
+<div class='snippet-item r-snippetized'>
+   Asset 1 &#160;&#8212;      C Language Handwritten Notes By CodeWithHarry ;           Asset 2  &#8212;      C Language Video Tutorials By CodeWithHarry ;
+</div>
+<a class='snippet-fade r-snippet-fade hidden' href='https://my-projects-in-c.blogspot.com/2023/02/CLanguageTutorial.html?m=1'></a>
+</div>
+<div class='jump-link flat-button ripple'>
+<a href='https://my-projects-in-c.blogspot.com/2023/02/CLanguageTutorial.html?m=1#more' title='C Language By CodeWithHarry '>
+Read more
+</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div></div>
+</main>
+</div>
+<footer class='footer section' id='footer' name='Footer'><div class='widget Attribution' data-version='2' id='Attribution1'>
+<div class='widget-content'>
+<div class='blogger'>
+<a href='https://www.blogger.com' rel='nofollow'>
+<svg class='svg-icon-24'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_post_blogger_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+Powered by Blogger
+</a>
+</div>
+<div class='image-attribution'>
+Theme images by <a href="http://www.istockphoto.com/portfolio/enot-poloskun?platform=blogger">enot-poloskun</a></div>
+</div>
+</div></footer>
+</div>
+</div>
+</div>
+<aside class='sidebar-container container sidebar-invisible' role='complementary'>
+<div class='navigation'>
+<button class='svg-icon-24-button flat-icon-button ripple sidebar-back'>
+<svg class='svg-icon-24'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_arrow_back_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</button>
+</div>
+<div class='sidebar_top_wrapper'>
+<div class='sidebar_top section' id='sidebar_top' name='Sidebar (Top)'><div class='widget Profile' data-version='2' id='Profile1'>
+<div class='wrapper'>
+<h3 class='title'>
+About Us
+</h3>
+<div class='widget-content team'>
+<ul>
+<li>
+<div class='team-member'>
+<a class='profile-link g-profile' href='https://www.blogger.com/profile/11283248926731737498' rel='nofollow'>
+<img alt='My photo' class='profile-img' height='120' src='//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmxijFNHEqPRgxzvdbdmhtxkLBkgLk3adDFVWZbbKfgYMqwVci3f4Yt7h5RZUKvPBhW-xs2D5pFQDPGPIX-OK90Drl_LeSAN4vJI54vuXxpYxtTOraW68OvizUFh7T4kzNnpTO28yOBB8NomRsn2nlx0Dj-d4WZM_bIrFKC96SmAV3lOI/s220/SAVE_20230330_241419.jpg' width='120'/><span class='profile-name'>Mohit Purohit </span>
+</a>
+</div>
+</li>
+<li>
+<div class='team-member'>
+<a class='profile-link g-profile' href='https://www.blogger.com/profile/07736831401518119164' rel='nofollow'>
+<div class='default-avatar-wrapper'>
+<svg class='svg-icon-24 avatar-icon'><use xlink:href='/responsive/sprite_v1_6.css.svg#ic_person_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+<span class='profile-name'>Yuvraj carpenter</span>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div></div>
+</div>
+<div class='sidebar_bottom section' id='sidebar_bottom' name='Sidebar (Bottom)'><div class='widget HTML' data-version='2' id='HTML2'>
+<div class='widget-content'>
+<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Tell us tell your query!",
+      "botConversationDescription": "All the knowledge of the is now on your fingertips!",
+      "botId": "0538e0d6-7d4d-4c44-9112-9992eb643c1a",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "0538e0d6-7d4d-4c44-9112-9992eb643c1a",
+      "botName": "Kachru and Kachauri Lal",
+      "avatarUrl": "https://raw.githubusercontent.com/UsernameisMohit/First/main/Programmers.png",
+      "emailAddress": "mohit.purohit626807@gmail.com",
+      "website": "https://my-projects-in-c.blogspot.com",
+      "stylesheet": "https://webchat-styler-css.botpress.app/prod/106e38ac-7201-47e5-8468-82a016831120/v51190/style.css",
+      "showBotInfoPage": true,
+      "enableConversationDeletion": true
+  });
+</script>
+</div>
+</div><div class='widget Followers' data-version='2' id='Followers1'>
+<h2 class='title'>Followers</h2>
+<div class='widget-content'>
+<div id='Followers1-wrapper'>
+<div style='margin-right:2px;'>
+<div><script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
+<div id="followers-iframe-container"></div>
+<script type="text/javascript">
+    window.followersIframe = null;
+    function followersIframeOpen(url) {
+      gapi.load("gapi.iframes", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          window.followersIframe = gapi.iframes.getContext().openChild({
+            url: url,
+            where: document.getElementById("followers-iframe-container"),
+            messageHandlersFilter: gapi.iframes.CROSS_ORIGIN_IFRAMES_FILTER,
+            messageHandlers: {
+              '_ready': function(obj) {
+                window.followersIframe.getIframeEl().height = obj.height;
+              },
+              'reset': function() {
+                window.followersIframe.close();
+                followersIframeOpen("https://www.blogger.com/followers.g?blogID\x3d5393488923647438845\x26colors\x3dCgt0cmFuc3BhcmVudBILdHJhbnNwYXJlbnQaByM3NTc1NzUiByMwQjgwNDMqByMzYjNiM2IyByMwMDAwMDA6ByM3NTc1NzVCByMwQjgwNDNKByMwMDAwMDBSByNGRkZGRkZaC3RyYW5zcGFyZW50\x26pageSize\x3d21\x26postID\x3d7765236652540864769\x26origin\x3dhttps://my-projects-in-c.blogspot.com/");              },
+              'open': function(url) {                window.followersIframe.close();
+                followersIframeOpen(url);
+              },
+              'blogger-ping': function() {
+              }
+            }
+          });
+        }
+      });
+    }
+    followersIframeOpen("https://www.blogger.com/followers.g?blogID\x3d5393488923647438845\x26colors\x3dCgt0cmFuc3BhcmVudBILdHJhbnNwYXJlbnQaByM3NTc1NzUiByMwQjgwNDMqByMzYjNiM2IyByMwMDAwMDA6ByM3NTc1NzVCByMwQjgwNDNKByMwMDAwMDBSByNGRkZGRkZaC3RyYW5zcGFyZW50\x26pageSize\x3d21\x26postID\x3d7765236652540864769\x26origin\x3dhttps://my-projects-in-c.blogspot.com/");
+  </script></div>
+</div>
+</div>
+<div class='clear'></div>
+</div>
+</div><div class='widget LinkList' data-version='2' id='LinkList1'>
+<h3 class='title'>
+Shortcuts
+</h3>
+<div class='widget-content'>
+<ul>
+<li><a href='https://my-projects-in-c.blogspot.com/2022/10/calculator.html?m=1'>Calculator in C</a></li>
+<li><a href='https://my-projects-in-c.blogspot.com/2022/10/unit-convertor.html?m=1'>Unit Converter in C</a></li>
+</ul>
+</div>
+</div><div class='widget ContactForm' data-version='2' id='ContactForm1'>
+<h3 class='title'>
+Contact Facility
+</h3>
+<div class='contact-form-widget'>
+<div class='form'>
+<form name='contact-form'>
+<p></p>
+Name
+<br/>
+<input class='contact-form-name' id='ContactForm1_contact-form-name' name='name' size='30' type='text' value=''/>
+<p></p>
+Email
+<span style='font-weight: bolder;'>*</span>
+<br/>
+<input class='contact-form-email' id='ContactForm1_contact-form-email' name='email' size='30' type='text' value=''/>
+<p></p>
+Message
+<span style='font-weight: bolder;'>*</span>
+<br/>
+<textarea class='contact-form-email-message' cols='25' id='ContactForm1_contact-form-email-message' name='email-message' rows='5'></textarea>
+<p></p>
+<input class='contact-form-button contact-form-button-submit' id='ContactForm1_contact-form-submit' type='button' value='Send'/>
+<p></p>
+<div style='text-align: center; max-width: 222px; width: 100%'>
+<p class='contact-form-error-message' id='ContactForm1_contact-form-error-message'></p>
+<p class='contact-form-success-message' id='ContactForm1_contact-form-success-message'></p>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class='widget Label' data-version='2' id='Label1'>
+<details class='collapsible extendable'>
+<summary>
+<div class='collapsible-title'>
+<h3 class='title'>
+Labels
+</h3>
+<svg class='svg-icon-24 chevron-down'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_expand_more_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<svg class='svg-icon-24 chevron-up'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_expand_less_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+</summary>
+<div class='widget-content list-label-widget-content'>
+<div class='first-items'>
+<ul>
+<li><a class='label-name' href='https://my-projects-in-c.blogspot.com/search/label/C%20Language%20by%20CodeWithHarry?m=1'>C Language by CodeWithHarry</a></li>
+<li><a class='label-name' href='https://my-projects-in-c.blogspot.com/search/label/Handwritten%20Notes%20of%20C?m=1'>Handwritten Notes of C</a></li><li><a class='label-name' href='https://my-projects-in-c.blogspot.com/search/label/Percentage%20of%20Subjects%20in%20C%20Language?m=1'>Percentage of Subjects in C Language</a></li>
+<li><a class='label-name' href='https://my-projects-in-c.blogspot.com/search/label/Unit%20Converter%20in%20C?m=1'>Unit Converter in C</a></li>
+<li><a class='label-name' href='https://my-projects-in-c.blogspot.com/search/label/Video%20Tutorials%20of%20C?m=1'>Video Tutorials of C</a></li>
+<li><a class='label-name' href='https://my-projects-in-c.blogspot.com/search/label/Zip%20File%20of%20C%20Notes?m=1'>Zip File of C Notes</a></li>
+</ul>
+</div>
+</div>
+</details>
+</div><div class='widget ReportAbuse' data-version='2' id='ReportAbuse1'>
+<h3 class='title'>
+<a class='report_abuse' href='https://www.blogger.com/go/report-abuse' rel='noopener nofollow' target='_blank'>Report Abuse
+</a>
+</h3>
+</div></div>
+</aside>
+<script type="text/javascript" src="https://resources.blogblog.com/blogblog/data/res/1851128816-indie_compiled.js" async="true"></script>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/2789723018-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY5jV27b7fLIqsJVC_KhxJ19Rq2ZbQ:1692538803971';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d5393488923647438845','//my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m\x3d1','5393488923647438845');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '5393488923647438845', 'title': 'Our Projects in C Language ', 'url': 'https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m\x3d1', 'canonicalUrl': 'https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html', 'homepageUrl': 'https://my-projects-in-c.blogspot.com/?m\x3d1', 'searchUrl': 'https://my-projects-in-c.blogspot.com/search', 'canonicalHomepageUrl': 'https://my-projects-in-c.blogspot.com/', 'blogspotFaviconUrl': 'https://my-projects-in-c.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': true, 'isMobileRequest': true, 'mobileClass': ' mobile', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Our Projects in C Language  - Atom\x22 href\x3d\x22https://my-projects-in-c.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Our Projects in C Language  - RSS\x22 href\x3d\x22https://my-projects-in-c.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Our Projects in C Language  - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/5393488923647438845/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Our Projects in C Language  - Atom\x22 href\x3d\x22https://my-projects-in-c.blogspot.com/feeds/7765236652540864769/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseClientId': 'ca-pub-6740780793149429', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': true, 'adsenseAutoAds': true, 'boqCommentIframeForm': true, 'loginRedirectParam': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/b035ae5858f11efe', 'plusOneApiSrc': 'https://apis.google.com/js/platform.js', 'disableGComments': true, 'interstitialAccepted': false, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'item', 'postId': '7765236652540864769', 'pageName': 'Multiplication Table ', 'pageTitle': 'Our Projects in C Language : Multiplication Table '}}, {'name': 'features', 'data': {}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'Contempo', 'localizedName': 'Contempo', 'isResponsive': true, 'isAlternateRendering': false, 'isCustom': false, 'variant': 'indie_light', 'variantId': 'indie_light'}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Multiplication Table ', 'description': 'Multiplication Table by Mohit Purohit                                          Copy Code               ...', 'url': 'https://my-projects-in-c.blogspot.com/2022/05/multiplication-table.html?m\x3d1', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 7765236652540864769}}, {'name': 'widgets', 'data': [{'title': 'Search This Blog', 'type': 'BlogSearch', 'sectionId': 'search_top', 'id': 'BlogSearch1'}, {'title': 'Our Projects in C Language  (Header)', 'type': 'Header', 'sectionId': 'header', 'id': 'Header1'}, {'title': '', 'type': 'PageList', 'sectionId': 'page_list_top', 'id': 'PageList1'}, {'type': 'AdSense', 'sectionId': 'ads', 'id': 'AdSense1'}, {'type': 'AdSense', 'sectionId': 'ads', 'id': 'AdSense2'}, {'title': 'Blog Posts', 'type': 'Blog', 'sectionId': 'page_body', 'id': 'Blog1', 'posts': [{'id': '7765236652540864769', 'title': 'Multiplication Table ', 'showInlineAds': false}], 'headerByline': {'regionName': 'header1', 'items': [{'name': 'share', 'label': ''}, {'name': 'author', 'label': 'By'}, {'name': 'timestamp', 'label': ''}]}, 'footerBylines': [{'regionName': 'footer1', 'items': [{'name': 'comments', 'label': 'comments'}, {'name': 'icons', 'label': ''}]}, {'regionName': 'footer2', 'items': [{'name': 'location', 'label': 'Location:'}]}, {'regionName': 'footer3', 'items': [{'name': 'labels', 'label': ''}]}], 'allBylineItems': [{'name': 'share', 'label': ''}, {'name': 'author', 'label': 'By'}, {'name': 'timestamp', 'label': ''}, {'name': 'comments', 'label': 'comments'}, {'name': 'icons', 'label': ''}, {'name': 'location', 'label': 'Location:'}, {'name': 'labels', 'label': ''}]}, {'title': '', 'type': 'PopularPosts', 'sectionId': 'page_body', 'id': 'PopularPosts1', 'posts': [{'title': 'Multiplication Table ', 'id': 7765236652540864769}, {'title': 'Unit Converter ', 'id': 377288475014992242}, {'title': 'C Language By CodeWithHarry ', 'id': 1622852837046436928}]}, {'type': 'Attribution', 'sectionId': 'footer', 'id': 'Attribution1'}, {'title': 'About Us', 'type': 'Profile', 'sectionId': 'sidebar_top', 'id': 'Profile1'}, {'title': '', 'type': 'HTML', 'sectionId': 'sidebar_bottom', 'id': 'HTML2'}, {'title': 'Followers', 'type': 'Followers', 'sectionId': 'sidebar_bottom', 'id': 'Followers1'}, {'title': 'Shortcuts', 'type': 'LinkList', 'sectionId': 'sidebar_bottom', 'id': 'LinkList1'}, {'title': 'Contact Facility', 'type': 'ContactForm', 'sectionId': 'sidebar_bottom', 'id': 'ContactForm1'}, {'title': 'Labels', 'type': 'Label', 'sectionId': 'sidebar_bottom', 'id': 'Label1'}, {'title': '', 'type': 'ReportAbuse', 'sectionId': 'sidebar_bottom', 'id': 'ReportAbuse1'}]}]);
+_WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch1', 'search_top', document.getElementById('BlogSearch1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'page_list_top', document.getElementById('PageList1'), {'title': '', 'links': [{'isCurrentPage': false, 'href': 'https://my-projects-in-c.blogspot.com/?m\x3d1', 'title': 'Home'}], 'mobile': false, 'showPlaceholder': false, 'hasCurrentPage': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AdSenseView', new _WidgetInfo('AdSense1', 'ads', document.getElementById('AdSense1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AdSenseView', new _WidgetInfo('AdSense2', 'ads', document.getElementById('AdSense2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'page_body', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/3650110424-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/3268905543-lightbox_bundle.css'}, 'displayModeFull'));_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'page_body', document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer', document.getElementById('Attribution1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar_top', document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar_bottom', document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FollowersView', new _WidgetInfo('Followers1', 'sidebar_bottom', document.getElementById('Followers1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'sidebar_bottom', document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ContactFormView', new _WidgetInfo('ContactForm1', 'sidebar_bottom', document.getElementById('ContactForm1'), {'contactFormMessageSendingMsg': 'Sending...', 'contactFormMessageSentMsg': 'Your message has been sent.', 'contactFormMessageNotSentMsg': 'Message could not be sent. Please try again later.', 'contactFormInvalidEmailMsg': 'A valid email address is required.', 'contactFormEmptyMessageMsg': 'Message field cannot be empty.', 'title': 'Contact Facility', 'blogId': '5393488923647438845', 'contactFormNameMsg': 'Name', 'contactFormEmailMsg': 'Email', 'contactFormMessageMsg': 'Message', 'contactFormSendMsg': 'Send', 'contactFormToken': 'AOuZoY4WfD_7jmlOC6b8okUH6oriA6Vk9Q:1692538803973', 'submitUrl': 'https://www.blogger.com/contact-form.do'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar_bottom', document.getElementById('Label1'), {}, 'displayModeFull'));_WidgetManager._RegisterWidget('_ReportAbuseView', new _WidgetInfo('ReportAbuse1', 'sidebar_bottom', document.getElementById('ReportAbuse1'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>
+
+[Program finished]
